@@ -1,0 +1,3608 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tradeverse | Where anyone can trade</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Pretendard',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+background:#F7F9FC;
+color:#111;
+overflow-x:hidden;
+
+}
+
+section{
+
+padding:120px 0;
+
+}
+
+.container{
+
+max-width:1320px;
+
+}
+
+:root{
+
+--main:#2563ff;
+--dark:#0f172a;
+--gray:#64748b;
+--light:#f8fafc;
+
+}
+
+h1{
+
+font-size:72px;
+font-weight:800;
+line-height:1.08;
+
+}
+
+h2{
+
+font-size:54px;
+font-weight:800;
+line-height:1.2;
+
+}
+
+p{
+
+font-size:19px;
+line-height:1.9;
+color:#667085;
+
+}
+
+.gradient{
+
+background:linear-gradient(90deg,#005dff,#00b2ff);
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+}
+
+.navbar{
+
+padding:22px 0;
+
+backdrop-filter:blur(18px);
+
+background:rgba(255,255,255,.8);
+
+border-bottom:1px solid rgba(0,0,0,.04);
+
+}
+
+.navbar-brand{
+
+font-size:30px;
+font-weight:800;
+
+}
+
+.nav-link{
+
+margin-left:28px;
+font-weight:600;
+color:#555!important;
+
+}
+
+
+.btn-main{
+
+padding:18px 42px;
+border-radius:60px;
+border:none;
+background:linear-gradient(135deg,#005dff,#00a8ff);
+color:white;
+font-weight:700;
+transition:.35s;
+
+}
+
+.btn-main:hover{
+
+transform:translateY(-4px);
+
+box-shadow:0 20px 50px rgba(0,90,255,.35);
+
+}
+
+.btn-sub{
+
+padding:18px 42px;
+border-radius:60px;
+border:2px solid #d9e4ff;
+background:white;
+font-weight:700;
+margin-left:16px;
+
+}
+
+.hero{
+    position:relative;
+    overflow:hidden;
+    background:
+    radial-gradient(circle at top right,#dfeeff 0%,transparent 40%),
+    radial-gradient(circle at bottom left,#eef5ff 0%,transparent 40%),
+    white;
+}
+
+.hero:before{
+
+content:'';
+
+position:absolute;
+
+width:850px;
+height:850px;
+
+right:-200px;
+top:-250px;
+
+border-radius:50%;
+
+background:#005dff;
+
+opacity:.05;
+
+filter:blur(120px);
+
+}
+
+.hero h5{
+
+letter-spacing:2px;
+font-weight:700;
+color:var(--main);
+
+}
+
+.hero p{
+
+max-width:820px;
+margin:auto;
+margin-top:35px;
+
+}
+
+.dashboard{
+
+margin-top:90px;
+
+padding:28px;
+
+background:white;
+
+border-radius:28px;
+
+box-shadow:0 35px 80px rgba(0,0,0,.08);
+
+}
+
+.dashboard img{
+
+width:100%;
+border-radius:18px;
+
+}
+
+.quote{
+
+margin-top:70px;
+
+padding:45px;
+
+background:linear-gradient(135deg,#0F172A,#1e3a8a);
+
+color:white;
+
+border-radius:30px;
+
+font-size:34px;
+
+font-weight:700;
+
+line-height:1.5;
+
+}
+
+.section2{
+
+background:white;
+
+}
+
+.compare{
+
+margin-top:80px;
+
+}
+
+.side-card{
+
+padding:45px;
+
+border-radius:28px;
+
+height:100%;
+
+background:white;
+
+box-shadow:0 25px 60px rgba(0,0,0,.05);
+
+}
+
+.left{
+
+border-top:6px solid #ff5b5b;
+
+}
+
+.right{
+
+border-top:6px solid #2563ff;
+
+}
+
+.side-card h3{
+
+font-size:30px;
+margin-bottom:35px;
+font-weight:800;
+
+}
+
+.side-card ul{
+
+list-style:none;
+padding:0;
+
+}
+
+.side-card li{
+
+padding:18px 0;
+
+font-size:20px;
+
+border-bottom:1px solid #ececec;
+
+}
+
+.arrow-area{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+height:100%;
+
+font-size:90px;
+
+font-weight:800;
+
+color:#005dff;
+
+}
+
+.change{
+
+margin-top:80px;
+
+padding:60px;
+
+border-radius:30px;
+
+background:linear-gradient(135deg,#f7fbff,#edf5ff);
+
+text-align:center;
+
+}
+
+.change h2{
+
+margin-bottom:25px;
+
+}
+
+.change p{
+
+max-width:850px;
+
+margin:auto;
+
+}
+
+@media(max-width:991px){
+
+h1{
+
+font-size:48px;
+
+}
+
+h2{
+
+font-size:38px;
+
+}
+
+.arrow-area{
+
+padding:40px 0;
+
+font-size:60px;
+
+}
+
+.hero{
+
+padding-top:120px;
+
+}
+
+}
+
+.solution-card{
+
+    background:linear-gradient(135deg,#0f172a,#1e3a8a);
+    color:#fff;
+    border-radius:28px;
+    padding:55px;
+    box-shadow:0 25px 70px rgba(30,58,138,.25);
+
+}
+
+.icon-circle{
+
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    background:rgba(255,255,255,.15);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:28px;
+
+}
+
+.gradient{
+
+    background:linear-gradient(90deg,#60a5fa,#38bdf8);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+}
+
+.process-section{
+
+    background:#fff; 
+
+}
+
+.process-wrapper{
+
+    display:flex;
+    justify-content:space-between;
+    position:relative;
+    margin-top:80px;
+    flex-wrap:wrap;
+
+}
+
+.process-line{
+
+    position:absolute;
+    top:32px;
+    left:5%;
+    right:5%;
+    height:4px;
+    background:#dbeafe;
+    z-index:1;
+
+}
+
+.step-circle{
+
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#2563eb,#06b6d4);
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:700;
+    margin:0 auto 25px;
+    margin-bottom:20px;
+    box-shadow:0 15px 35px rgba(37,99,235,.25);
+
+}
+
+.process-step h4{
+
+    margin-bottom:12px;
+    font-weight:700;
+
+}
+
+.process-step p{
+
+    color:#666;
+    font-size:15px;
+
+}
+
+.process-result{
+
+    background:#f8fbff;
+    border-radius:25px;
+    padding:45px;
+    box-shadow:0 20px 60px rgba(0,0,0,.05);
+
+}
+
+@media(max-width:992px){
+
+.process-step{
+
+    width:48%;
+    margin-bottom:50px;
+
+}
+
+.process-line{
+
+    display:none;
+
+}
+
+}
+
+.story-card{
+
+padding:70px;
+background:#fff;
+border-radius:30px;
+box-shadow:0 30px 80px rgba(0,0,0,.08);
+
+}
+
+.story-card blockquote{
+
+font-size:42px;
+font-weight:800;
+line-height:1.3;
+margin-bottom:40px;
+
+}
+
+.stat-card{
+
+padding:45px;
+border-radius:24px;
+background:white;
+text-align:center;
+box-shadow:0 15px 40px rgba(0,0,0,.05);
+
+}
+
+.stat-card h2{
+
+font-size:52px;
+font-weight:800;
+
+}
+
+.mini-card{
+
+padding:28px;
+background:#f8fbff;
+border-radius:18px;
+text-align:center;
+font-weight:600;
+
+}
+
+.insight-card{
+padding:45px;
+border-radius:28px;
+background:white;
+height:100%;
+transition:.3s;
+box-shadow:0 15px 45px rgba(0,0,0,.06);
+}
+
+.insight-card:hover{
+transform:translateY(-10px);
+}
+
+.statement-box{
+padding:70px;
+border-radius:30px;
+background:linear-gradient(135deg,#0f172a,#1e3a8a);
+color:white;
+text-align:center;
+}
+
+.behavior-card{
+padding:55px;
+border-radius:28px;
+background:#f8fbff;
+}
+
+.bad-item{
+background:#fff2f2;
+padding:20px;
+margin-bottom:18px;
+border-radius:14px;
+font-weight:600;
+}
+
+.good-item{
+background:#eefbf5;
+padding:20px;
+margin-bottom:18px;
+border-radius:14px;
+font-weight:600;
+}
+
+.behavior-philosophy{
+padding:140px 0;
+background:#0f172a;
+color:white;
+}
+
+.process-flow{
+display:flex;
+justify-content:center;
+gap:18px;
+flex-wrap:wrap;
+font-size:26px;
+font-weight:700;
+}
+
+.process-flow span{
+color:#60a5fa;
+}
+
+.process-wrapper{
+display:flex;
+align-items:center;
+justify-content:center;
+flex-wrap:wrap;
+gap:15px;
+}
+
+.process-step{
+
+    position:relative;
+
+    z-index:2;
+
+    width:200px;
+    height:300px;
+
+    padding:35px 25px;
+
+    display:flex;
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:flex-start;
+
+    text-align:center;
+
+    background:#fff;
+
+    border-radius:24px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.05);
+
+}
+
+.process-step.active{
+background:#2563eb;
+color:#fff;
+}
+
+.step-number{
+font-size:13px;
+opacity:.6;
+margin-bottom:12px;
+}
+
+.process-arrow{
+font-size:32px;
+color:#94a3b8;
+font-weight:700;
+}
+
+.compare-table{
+display:flex;
+flex-direction:column;
+gap:25px;
+}
+
+.compare-row{
+display:grid;
+grid-template-columns:1fr 80px 1fr;
+align-items:center;
+padding:35px;
+background:white;
+border-radius:24px;
+box-shadow:0 12px 35px rgba(0,0,0,.05);
+}
+
+.middle{
+text-align:center;
+font-size:34px;
+font-weight:700;
+color:#2563eb;
+}
+
+.persona-card{
+padding:45px;
+border-radius:28px;
+background:white;
+box-shadow:0 15px 35px rgba(0,0,0,.05);
+text-align:center;
+transition:.3s;
+height:100%;
+}
+
+.persona-card:hover{
+transform:translateY(-10px);
+}
+
+.emoji{
+font-size:55px;
+margin-bottom:20px;
+}
+
+.solution-list{
+display:flex;
+flex-direction:column;
+gap:30px;
+max-width:900px;
+margin:auto;
+}
+
+.solution-item{
+display:flex;
+gap:30px;
+align-items:flex-start;
+padding:35px;
+background:#fff;
+border-radius:24px;
+box-shadow:0 15px 35px rgba(0,0,0,.05);
+}
+
+.solution-item .icon{
+width:60px;
+height:60px;
+border-radius:50%;
+background:#2563eb;
+color:#fff;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:700;
+font-size:22px;
+flex-shrink:0;
+}
+
+.check-card{
+padding:24px 30px;
+background:#fff;
+border-radius:18px;
+box-shadow:0 10px 30px rgba(0,0,0,.05);
+font-size:18px;
+transition:.3s;
+}
+
+.check-card:hover{
+transform:translateY(-6px);
+}
+
+.check-card.active{
+background:#2563eb;
+color:#fff;
+}
+
+.principle-card{
+padding:45px;
+height:100%;
+background:#fff;
+border-radius:26px;
+box-shadow:0 15px 35px rgba(0,0,0,.05);
+}
+
+.principle-card .number{
+font-size:52px;
+font-weight:800;
+color:#2563eb;
+opacity:.15;
+margin-bottom:20px;
+}
+
+
+.feature-list{
+display:flex;
+flex-direction:column;
+gap:18px;
+}
+
+.feature-item{
+padding:22px 28px;
+background:#fff;
+border-radius:18px;
+box-shadow:0 12px 30px rgba(0,0,0,.05);
+}
+
+.promise-card{
+margin-top:70px;
+padding:70px;
+background:#fff;
+border-radius:32px;
+box-shadow:0 20px 60px rgba(0,0,0,.06);
+text-align:center;
+}
+
+.promise-card h1{
+font-size:48px;
+font-weight:700;
+line-height:1.4;
+}
+
+.divider{
+width:80px;
+height:4px;
+background:#2563eb;
+margin:45px auto;
+border-radius:10px;
+}
+
+.promise-grid{
+margin-top:60px;
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:25px;
+}
+
+.edu-line{
+
+    padding:28px 15px;
+
+    border-bottom:1px solid #ECECEC;
+
+    font-size:22px;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.edu-line:hover{
+
+    padding-left:20px;
+
+    color:#2563EB;
+
+}
+
+.gradient-text{
+
+    background:linear-gradient(90deg,#4F6DFF,#2563EB);
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+}
+
+.feature-item:hover,
+.promise-card:hover{
+transform:translateY(-5px);
+transition:.3s;
+}
+
+.custom-faq .accordion-item{
+border:none;
+margin-bottom:18px;
+border-radius:18px!important;
+overflow:hidden;
+box-shadow:0 12px 30px rgba(0,0,0,.05);
+}
+
+.custom-faq .accordion-button{
+padding:24px 30px;
+font-size:20px;
+font-weight:600;
+background:white;
+}
+
+.custom-faq .accordion-body{
+padding:28px 30px;
+font-size:17px;
+line-height:1.8;
+}
+
+.final-cta{
+padding:140px 0;
+background:linear-gradient(135deg,#2563eb,#1d4ed8);
+color:white;
+}
+
+.final-cta .statement-box{
+background:rgba(255,255,255,.12);
+border:1px solid rgba(255,255,255,.15);
+padding:40px;
+border-radius:24px;
+display:inline-block;
+}
+
+.final-cta .statement-box span{
+opacity:.4;
+margin:0 18px;
+}
+
+.footer-section{
+padding:120px 0 70px;
+background:#0f172a;
+color:white;
+}
+
+.footer-quote{
+margin:70px 0;
+}
+
+.footer-manifesto{
+display:flex;
+justify-content:center;
+gap:50px;
+font-size:32px;
+font-weight:700;
+margin-bottom:60px;
+flex-wrap:wrap;
+}
+
+.footer-desc{
+font-size:20px;
+opacity:.85;
+}
+
+.footer-bottom{
+margin-top:70px;
+opacity:.45;
+}
+
+/* 메인 제목 섹션 전용 스타일 */
+.d-flex.align-items-center.justify-content-center.flex-wrap {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* 화면 좁아지면 아래로 내려가게 */
+}
+
+/* 스칼렛 캐릭터 스타일 */
+.scarlett-character {
+  max-width: 100%; /* 화면보다 크지 않게 */
+  height: auto;
+  transition: transform 0.3s ease; /* 호버 시 부드러운 애니메이션 */
+}
+
+/* 호버 시 살짝 확대되는 효과 (옵션) */
+.scarlett-character:hover {
+  transform: scale(1.05);
+}
+
+/* 모바일 화면에서 제목과 이미지 배치 조정 */
+@media (max-width: 991px) {
+  .d-flex.align-items-center.justify-content-center.flex-wrap h1 {
+    text-align: center !important; /* 모바일에선 제목 가운데 정렬 */
+    margin-right: 0 !important;
+    margin-bottom: 1rem; /* 이미지와의 간격 */
+  }
+  .scarlett-character {
+    width: 200px; /* 모바일에서 캐릭터 크기 축소 */
+  }
+}
+
+/* =========================================================
+   MINDSET
+========================================================= */
+.mindset-section{
+    position:relative;
+    overflow:hidden;
+    background:linear-gradient(135deg,#4F6DFF 0%,#3B82F6 45%,#2563EB 100%);
+}
+
+.mindset-section::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+        radial-gradient(circle at 20% 20%,rgba(255,255,255,.08),transparent 35%),
+        radial-gradient(circle at 80% 30%,rgba(255,255,255,.06),transparent 40%);
+}
+</style>
+
+</head>
+<body>
+
+<!-- ========================================================= -->
+<!-- MINDSET -->
+<!-- ========================================================= -->
+<section class="mindset-section" style="padding:20px 0;">
+    <div class="container">
+        <div data-aos="zoom-in"
+             style="position:relative; z-index:2; text-align:center;">
+            <h2 style="
+                margin:0;
+                color:#fff;
+                font-size:clamp(34px,4.2vw,24px);
+                font-weight:900;
+                line-height:1.25; ">
+                투자 감각이나
+                <span style="color:#FFC83D;">
+                    강심장
+                </span>
+                같은 건
+                타고나지 않아도 됩니다.
+            </h2>
+        </div>
+    </div>
+</section>
+
+<!-- HERO -->
+<section class="hero" style="padding-top:100px; padding-bottom:150px;">
+    <div class="container text-center">
+    <h5 data-aos="fade-up">트레이드버스: 누구나 거래할 수 있는 곳</h5>
+    <h1 data-aos="fade-up" data-aos-delay="100">
+        종목을 쫓지 마세요.<br>
+        <span class="gradient">
+        나만의 기준으로 실행하세요.</span>
+    </h1>
+    <p data-aos="fade-up" data-aos-delay="200">
+    트레이드버스는 추천 종목을 제공하는 서비스가 아닙니다.<br>
+    코딩 없이 전략을 만들고, 실행하고, 기록하고, 복기하며,<br>
+    지속적으로 개선할 수 있도록 돕는 <strong>웹 기반 전략 운영 플랫폼</strong>입니다.<br>
+    더 많은 종목을 찾는 것보다 중요한 것은 <strong>명확한 기준과 꾸준한 실행</strong>입니다.<br>
+    우리는 여러분의 투자를 감이 아닌 시스템으로 운영할 수 있도록 돕습니다.
+    </p>
+    <div data-aos="fade-left" data-aos-delay="300" style="display: flex; flex-direction: column; align-items: center; flex-shrink: 0;">
+        <img src="img/scarlett_run_3d.png" 
+            alt="Tradeverse Mascot Scarlett" 
+            class="scarlett-character" 
+            style="width: 250px; height: auto; padding-top: 30px;">
+    </div>
+    <!--
+    <div class="mt-5" data-aos="fade-up" data-aos-delay="300">
+        <a href="https://trade.tradeverse.one" target="_blank" rel="noopener noreferrer"><button class="btn-main">Tradeverse 시작하기</button></a><a href="http://pf.kakao.com/_xlJxajX" target="_blank" rel="noopener noreferrer"><button class="btn-sub">카카오채널 문의하기</button></a>
+    </div>
+    <div class="quote" data-aos="fade-up">
+        추천을 받은 거래가 아니라,<br>
+        전략을 운영한 기록이 쌓이고 있습니다.
+        </div>
+    </div>
+    -->
+</section>
+
+
+<!-- SECTION 2 -->
+<section class="section2">
+  <div class="container text-center">
+    
+    <div data-aos="fade-up" data-aos-delay="100">
+      <h2>
+        추천 종목을 찾는 투자자에서<br>
+        <span class="gradient">전략을 운영하는 투자자로</span>
+      </h2>
+      <p class="mt-4">
+        많은 투자자들은 매일 새로운 종목을 찾습니다.<br>
+        뉴스를 확인하고, 유튜브를 보고, 커뮤니티를 찾아다닙니다.<br>
+        하지만 실제 성과를 만드는 것은 무엇을 샀는가보다 어떤 기준으로 투자했는가입니다.
+      </p>
+    </div>
+
+    <div class="my-5" data-aos="fade-up" data-aos-delay="200" style="max-width: 600px; margin: 0 auto; text-align: center;">
+      <div class="core-step mb-4">
+        <h3 style="font-size: 1.5rem; color: #fff; background: linear-gradient(135deg, #00c6ff, #0072ff); display: inline-block; padding: 12px 30px; border-radius: 50px; font-weight: bold; box-shadow: 0 4px 15px rgba(0,114,255,0.2);">
+          어떤 기준으로 진입했는지
+        </h3>
+      </div>
+      <div class="core-step mb-4">
+        <h3 style="font-size: 1.5rem; color: #fff; background: linear-gradient(135deg, #00c6ff, #0072ff); display: inline-block; padding: 12px 30px; border-radius: 50px; font-weight: bold; box-shadow: 0 4px 15px rgba(0,114,255,0.2);">
+          어떤 조건에서 매도했는지
+        </h3>
+      </div>
+      <div class="core-step mb-4">
+        <h3 style="font-size: 1.5rem; color: #fff; background: linear-gradient(135deg, #00c6ff, #0072ff); display: inline-block; padding: 12px 30px; border-radius: 50px; font-weight: bold; box-shadow: 0 4px 15px rgba(0,114,255,0.2);">
+          손실을 어떻게 관리했는지
+        </h3>
+      </div>
+      <div class="core-step mb-4">
+        <h3 style="font-size: 1.5rem; color: #fff; background: linear-gradient(135deg, #00c6ff, #0072ff); display: inline-block; padding: 12px 30px; border-radius: 50px; font-weight: bold; box-shadow: 0 4px 15px rgba(0,114,255,0.2);">
+          그리고 그 결과를 어떻게 복기했는지
+        </h3>   
+      </div>
+    </div>
+
+    <div class="change mt-5" data-aos="fade-up" data-aos-delay="300">
+        <h2>
+            트레이드버스는 투자자의 관점을 바꾸고자 합니다.
+        </h2>
+        <p class="mt-4 fs-4 lh-lg" style="font-size: 1.25rem; word-break: keep-all;">
+            종목을 따라가는 투자에서, <strong style="color: var(--primary-color, #0072ff);">전략을 운영하는 투자로</strong>.<br>
+            감정에 흔들리는 매매에서, <strong style="color: var(--primary-color, #0072ff);">규칙에 기반한 실행으로</strong>.<br>
+            일회성 수익을 노리는 방식에서, <strong style="color: var(--primary-color, #0072ff);">반복 가능한 투자 프로세스로</strong>.
+        </p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ========================================================= -->
+<!-- WHY GOOD STOCKS AREN'T ENOUGH -->
+<!-- ========================================================= -->
+
+<section class="py-5 py-lg-7 bg-light">
+
+    <div class="container" style="max-width:1100px;">
+
+        <!-- Title -->
+
+        <div class="text-center mb-5" data-aos="fade-up">
+
+            <span class="badge bg-primary-subtle text-primary rounded-pill px-3 py-2 mb-3">
+                Why Investors Fail
+            </span>
+
+            <h2 class="fw-bold"
+                style="font-size:clamp(38px,4vw,54px);line-height:1.25;">
+
+                왜 좋은 종목을 알아도<br>
+                결과는 흔들릴까요?
+
+            </h2>
+
+            <p class="mt-4 text-muted"
+               style="font-size:20px;">
+
+                좋은 종목을 찾았는데도 원하는 결과를 얻지 못했던 경험이 있으신가요?
+
+            </p>
+
+        </div>
+
+
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-10">
+
+                <div style="
+                    background:white;
+                    border-radius:32px;
+                    overflow:hidden;
+                    box-shadow:0 25px 70px rgba(0,0,0,.08);
+                ">
+
+                    <div class="row g-0">
+
+                        <!-- BEFORE -->
+
+                        <div class="col-lg-6"
+                             style="padding:55px;">
+
+                            <span style="
+                                background:#FFE8E8;
+                                color:#FF4D4F;
+                                padding:8px 18px;
+                                border-radius:999px;
+                                font-weight:700;
+                                font-size:14px;
+                            ">
+
+                                BEFORE
+
+                            </span>
+
+                            <h3 class="fw-bold mt-4 mb-4">
+
+                                많은 투자자들이<br>
+
+                                반복하는 행동
+
+                            </h3>
+
+                            <div style="
+                                font-size:20px;
+                                line-height:2.2;
+                            ">
+
+                                ❌ 수익이 나면 너무 빨리 팔고,<br>
+
+                                ❌ 손실이 나면 손절을 미루고,<br>
+
+                                ❌ 기준 없이 다시 진입하고,<br>
+
+                                ❌ 결국 같은 실수를 반복한 적은 없으신가요?
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- AFTER -->
+
+                        <div class="col-lg-6"
+                             style="
+                             background:linear-gradient(135deg,#4F6DFF,#2563EB);
+                             color:white;
+                             padding:55px;
+                             ">
+
+                            <span style="
+                                background:rgba(255,255,255,.18);
+                                padding:8px 18px;
+                                border-radius:999px;
+                                font-weight:700;
+                                font-size:14px;
+                            ">
+
+                                TRADEVERSE
+
+                            </span>
+
+                            <h3 class="fw-bold mt-4 mb-4">
+
+                                Tradeverse가 집중한 문제
+
+                            </h3>
+
+                            <div style="
+                                font-size:20px;
+                                line-height:2;
+                                color:rgba(255,255,255,.92);
+                            ">
+
+                                문제는 정보가 부족해서가 아닐 수도 있습니다.<br><br>
+
+                                <strong style="
+                                    font-size:30px;
+                                    color:white;
+                                ">
+
+                                    문제는<br>
+
+                                    일관된 실행 구조가<br>
+
+                                    없기 때문일 수도 있습니다.
+
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Bottom Message -->
+
+        <div class="text-center mt-5"
+             data-aos="fade-up">
+
+            <p style="
+                font-size:22px;
+                line-height:2;
+                color:#444;
+                max-width:900px;
+                margin:auto;
+            ">
+
+                Tradeverse는 바로 이 지점에 집중했습니다.<br><br>
+
+                투자에 필요한 것은 더 많은 추천이 아니라,
+
+            </p>
+
+            <h2 class="fw-bold mt-3"
+                style="
+                font-size:42px;
+                line-height:1.5;
+                ">
+
+                스스로 판단하고 실행할 수 있는<br>
+
+                <span class="gradient">
+
+                    나만의 전략 운영 시스템
+
+                </span>
+
+                입니다.
+
+            </h2>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+PROCESS
+========================= -->
+
+<section class="process-section py-5 py-lg-7">
+
+    <div class="container">
+
+        <div class="text-center mb-5" data-aos="fade-up">
+
+            <span class="badge bg-primary-subtle text-primary rounded-pill px-3 py-2 mb-3">
+                Investment Workflow
+            </span>
+
+            <h2 class="display-5 fw-bold">
+
+                Tradeverse는<br>
+
+                <span class="gradient">
+                    투자 과정을 하나의 시스템으로 연결합니다.
+                </span>
+
+            </h2>
+
+            <p class="lead text-muted mt-3">
+
+                단순한 자동매매가 아닙니다.<br>
+
+                전략을 만들고, 실행하고, 개선하는 모든 과정을 하나의 흐름으로 연결합니다.
+
+            </p>
+
+        </div>
+
+
+        <div class="process-wrapper">
+
+            <div class="process-line"></div>
+
+            <div class="process-step" data-aos="fade-up">
+
+                <div class="step-circle">
+                    01
+                </div>
+
+                <h4>시장 이해</h4>
+
+                <p>
+                    시장 흐름을 이해하고<br>
+                    관심 종목을 선별합니다.
+                </p>
+
+            </div>
+
+            <div class="process-step" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="step-circle">
+                    02
+                </div>
+
+                <h4>전략 설계</h4>
+
+                <p>
+                    매수·매도 기준을 만들고<br>
+                    전략을 설계합니다.
+                </p>
+
+            </div>
+
+            <div class="process-step" data-aos="fade-up" data-aos-delay="200">
+
+                <div class="step-circle">
+                    03
+                </div>
+
+                <h4>실행</h4>
+
+                <p>
+                    자동 또는 반자동으로<br>
+                    전략을 실행합니다.
+                </p>
+
+            </div>
+
+            <div class="process-step" data-aos="fade-up" data-aos-delay="300">
+
+                <div class="step-circle">
+                    04
+                </div>
+
+                <h4>기록</h4>
+
+                <p>
+                    모든 거래를 기록하고<br>
+                    데이터로 남깁니다.
+                </p>
+
+            </div>
+
+            <div class="process-step" data-aos="fade-up" data-aos-delay="400">
+
+                <div class="step-circle">
+                    05
+                </div>
+
+                <h4>복기</h4>
+
+                <p>
+                    차트 위에서<br>
+                    실제 거래를 다시 확인합니다.
+                </p>
+
+            </div>
+
+            <div class="process-step" data-aos="fade-up" data-aos-delay="500">
+
+                <div class="step-circle">
+                    06
+                </div>
+
+                <h4>개선</h4>
+
+                <p>
+                    더 나은 전략으로<br>
+                    지속적으로 발전합니다.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="text-center mt-5" data-aos="zoom-in">
+
+            <div class="process-result">
+
+                <small class="text-uppercase text-primary fw-bold">
+
+                    Tradeverse Process
+
+                </small>
+
+                <h3 class="fw-bold mt-3">
+
+                    분석 → 전략 → 실행 → 기록 → 복기 → 개선 → 습관 → 성과
+
+                </h3>
+
+                <p class="text-muted mt-3">
+
+                    우리는 성과 자체보다<br>
+                    좋은 프로세스를 만드는 것이 더 중요하다고 믿습니다.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================================= -->
+<!-- REAL DATA -->
+<!-- ========================================================= -->
+
+<section class="stats-section py-5 py-lg-7">
+
+    <div class="container">
+
+        <div class="text-center mb-5" data-aos="fade-up">
+
+            <span class="badge bg-success-subtle text-success rounded-pill px-3 py-2 mb-3">
+                Real Data
+            </span>
+
+            <h2 class="display-5 fw-bold">
+
+                추천을 받은 거래가 아니라,<br>
+
+                <span class="gradient">
+                    전략을 운영한 기록이 쌓이고 있습니다.
+                </span>
+
+            </h2>
+
+            <p class="lead text-muted mt-4">
+
+                Tradeverse에서는 수익률보다<br>
+
+                전략을 만들고 실행하고 개선한 과정이
+                계속 쌓이고 있습니다.
+
+            </p>
+
+        </div>
+
+        <div class="row g-4 mt-4">
+
+            <div class="col-lg-3 col-6">
+
+                <div class="stat-card">
+
+                    <h2 class="counter">0</h2>
+
+                    <span>생성된 전략</span>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-6">
+
+                <div class="stat-card">
+
+                    <h2 class="counter">0</h2>
+
+                    <span>자동 실행 주문</span>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-6">
+
+                <div class="stat-card">
+
+                    <h2 class="counter">0</h2>
+
+                    <span>실제 매매 케이스</span>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-6">
+
+                <div class="stat-card">
+
+                    <h2 class="counter">0</h2>
+
+                    <span>거래일지 · 복기</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row mt-4">
+
+            <div class="col-md-4">
+
+                <div class="mini-card">
+
+                    전략 개선 사례
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="mini-card">
+
+                    실제 사용자 후기
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="mini-card">
+
+                    실제 사용자 수익 인증
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================================= -->
+<!-- OUR STORY -->
+<!-- ========================================================= -->
+
+<section class="story-section">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-5" data-aos="fade-right">
+
+                <span class="story-label">
+
+                    OUR STORY
+
+                </span>
+
+                <h2 class="display-5 fw-bold mt-4">
+
+                    우리는 왜<br>
+
+                    Tradeverse를 만들게 되었을까요?
+
+                </h2>
+
+                <p class="lead mt-4">
+
+                    Tradeverse는 자동매매 플랫폼을 만들기 위해
+                    시작된 프로젝트가 아닙니다.
+
+                </p>
+
+            </div>
+
+            <div class="col-lg-7" data-aos="fade-left">
+
+                <div class="story-card">
+
+                    <blockquote>
+
+                        "왜 대부분의 개인 투자자는<br>
+
+                        좋은 종목을 알아도
+                        시장에서 살아남지 못할까?"
+
+                    </blockquote>
+
+                    <hr>
+
+                    <p>
+
+                        처음에는 우리도 종목이 문제라고 생각했습니다.
+
+                        더 좋은 종목을 찾으면
+                        더 좋은 결과가 나올 것이라고 믿었습니다.
+
+                    </p>
+
+                    <p>
+
+                        하지만 수많은 투자 사례와
+                        실제 거래를 보며 생각이 달라졌습니다.
+
+                    </p>
+
+                    <h4>
+
+                        좋은 종목을 몰라서 실패하는 것이 아니라,
+
+                        좋은 행동을 꾸준히 하지 못해서
+                        실패한다는 것을 깨달았습니다.
+
+                    </h4>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="market-section py-5 py-lg-7">
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<span class="badge bg-danger-subtle text-danger rounded-pill px-3 py-2">
+
+Market Insight
+
+</span>
+
+<h2 class="display-5 fw-bold mt-4">
+
+우리가 발견한
+
+<span class="gradient">
+
+투자 시장의 문제
+
+</span>
+
+</h2>
+
+<p class="lead text-muted mt-3">
+
+Tradeverse를 개발하며 증권사, 금융기관,
+투자 플랫폼 관계자들과 수많은 이야기를 나누었습니다.
+
+</p>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-lg-4">
+
+<div class="insight-card">
+
+<div class="icon">📈</div>
+
+<h4>추천 종목 중심 투자</h4>
+
+<p>
+
+많은 투자자들은
+투자 방법보다
+추천 종목을 먼저 찾고 있었습니다.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-4">
+
+<div class="insight-card">
+
+<div class="icon">💻</div>
+
+<h4>익숙한 HTS / MTS</h4>
+
+<p>
+
+새로운 플랫폼보다
+기존 환경을 더 선호하는
+사용자가 많았습니다.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-4">
+
+<div class="insight-card">
+
+<div class="icon">🧠</div>
+
+<h4>행동 변화의 어려움</h4>
+
+<p>
+
+좋은 서비스를 만드는 것보다
+행동을 바꾸는 일이
+훨씬 어렵다는 사실.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="statement-box mt-5">
+
+<h3>
+
+그래서 우리는
+
+<strong>
+
+또 하나의 추천 서비스가 아니라
+
+</strong>
+
+</h3>
+
+<h2 class="gradient mt-4">
+
+스스로 전략을 만들고,
+
+운영하고,
+
+개선하는 플랫폼을 만들기로 했습니다.
+
+</h2>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section class="behavior-section">
+
+<div class="container">
+
+<div class="section-title text-center mb-5">
+
+<h2>
+
+문제는 종목이 아니라
+
+<span class="gradient">행동입니다.</span>
+
+</h2>
+
+<p>
+
+Tradeverse는 투자 방식을 바꾸는 것이 아니라
+
+투자자의 행동을 바꾸는 플랫폼입니다.
+
+</p>
+
+</div>
+
+<div class="row align-items-center">
+
+<!-- BEFORE -->
+
+<div class="col-lg-5">
+
+<div class="compare-card before-card">
+
+<span class="badge bg-danger mb-4">
+
+Before
+
+</span>
+
+<h3>
+
+종목을 따라가는 투자
+
+</h3>
+
+<ul>
+
+<li>좋은 종목만 찾는다</li>
+
+<li>뉴스를 따라간다</li>
+
+<li>추천 종목에 의존한다</li>
+
+<li>감정적으로 매매한다</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<!-- ARROW -->
+
+<div class="col-lg-2 text-center">
+
+<div class="compare-arrow">
+
+→
+
+</div>
+
+</div>
+
+<!-- AFTER -->
+
+<div class="col-lg-5">
+
+<div class="compare-card after-card">
+
+<span class="badge bg-success mb-4">
+
+After
+
+</span>
+
+<h3>
+
+전략을 운영하는 투자
+
+</h3>
+
+<ul>
+
+<li>나만의 기준을 만든다</li>
+
+<li>전략대로 실행한다</li>
+
+<li>거래를 기록한다</li>
+
+<li>복기하며 개선한다</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="row mt-5">
+
+<div class="col-lg-10 mx-auto">
+
+<div class="glass-card text-center">
+
+<h3>
+
+결과를 결정하는 것은
+
+<strong>
+
+무엇을 샀는가가 아니라
+
+어떻게 행동했는가입니다.
+
+</strong>
+
+</h3>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section class="behavior-philosophy">
+
+<div class="container text-center">
+
+<span class="badge bg-primary-subtle text-primary rounded-pill px-3 py-2">
+
+Behavior-Based Investing
+
+</span>
+
+<h2 class="display-3 fw-bold mt-5">
+
+좋은 행동은
+
+<br>
+
+좋은 전략을 만들고,
+
+<br>
+
+좋은 전략은
+
+<br>
+
+좋은 결과를 만듭니다.
+
+</h2>
+
+<div class="process-box mt-5">
+
+<h3>
+
+우리는
+
+성과보다
+
+<strong class="gradient">
+
+성과를 만들어내는 프로세스
+
+</strong>
+
+를 더 중요하게 생각합니다.
+
+</h3>
+
+</div>
+
+<div class="mt-5">
+
+<div class="process-flow">
+
+분석
+
+<span>→</span>
+
+전략
+
+<span>→</span>
+
+실행
+
+<span>→</span>
+
+기록
+
+<span>→</span>
+
+복기
+
+<span>→</span>
+
+개선
+
+<span>→</span>
+
+습관
+
+<span>→</span>
+
+성과
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- INVESTMENT PROCESS -->
+<!-- ========================================================= -->
+
+<section class="process-section">
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<span class="badge bg-primary-subtle text-primary rounded-pill px-3 py-2">
+
+Investment Process
+
+</span>
+
+<h2 class="display-5 fw-bold mt-4">
+
+Tradeverse 투자 프로세스
+
+</h2>
+
+<p class="lead text-muted">
+
+성과는 좋은 전략이 아니라,
+
+좋은 프로세스가 반복될 때 만들어집니다.
+
+</p>
+
+</div>
+
+<div class="process-wrapper">
+
+<div class="process-step">
+
+<div class="step-number">01</div>
+
+<h4>분석</h4>
+
+<p>시장 이해</p>
+
+</div>
+
+<div class="process-arrow">→</div>
+
+<div class="process-step">
+
+<div class="step-number">02</div>
+
+<h4>전략</h4>
+
+<p>기준 설계</p>
+
+</div>
+
+<div class="process-arrow">→</div>
+
+<div class="process-step">
+
+<div class="step-number">03</div>
+
+<h4>실행</h4>
+
+<p>자동 · 반자동</p>
+
+</div>
+
+<div class="process-arrow">→</div>
+
+<div class="process-step">
+
+<div class="step-number">04</div>
+
+<h4>기록</h4>
+
+<p>거래 저장</p>
+
+</div>
+
+<div class="process-arrow">→</div>
+
+<div class="process-step">
+
+<div class="step-number">05</div>
+
+<h4>복기</h4>
+
+<p>차트 분석</p>
+
+</div>
+
+<div class="process-arrow">→</div>
+
+<div class="process-step">
+
+<div class="step-number">06</div>
+
+<h4>개선</h4>
+
+<p>전략 수정</p>
+
+</div>
+
+<div class="process-arrow">→</div>
+
+<div class="process-step">
+
+<div class="step-number">07</div>
+
+<h4>습관</h4>
+
+<p>반복 실행</p>
+
+</div>
+
+<div class="process-arrow">→</div>
+
+<div class="process-step active">
+
+<div class="step-number">08</div>
+
+<h4>성과</h4>
+
+<p>자연스러운 결과</p>
+
+</div>
+
+</div>
+
+<div class="statement-box mt-5">
+
+<h3>
+
+성과는 목표가 아니라,
+
+<strong>
+
+올바른 프로세스가 반복될 때
+
+</strong>
+
+자연스럽게 따라오는 결과입니다.
+
+</h3>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+<!-- ========================================================= -->
+<!-- DIFFERENCE -->
+<!-- ========================================================= -->
+
+<section class="difference-section">
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<span class="badge bg-success-subtle text-success rounded-pill px-3 py-2">
+
+Why Tradeverse
+
+</span>
+
+<h2 class="display-5 fw-bold mt-4">
+
+그래서
+
+<span class="gradient">
+
+Tradeverse는 다릅니다.
+
+</span>
+
+</h2>
+
+</div>
+
+<div class="compare-table">
+
+<div class="compare-row">
+
+<div class="left">
+
+<h5>많은 플랫폼</h5>
+
+<p>
+
+수익률을 중심으로 이야기합니다.
+
+</p>
+
+</div>
+
+<div class="middle">
+
+→
+
+</div>
+
+<div class="right">
+
+<h5>Tradeverse</h5>
+
+<p>
+
+투자자의 행동을 개선합니다.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="compare-row">
+
+<div class="left">
+
+<h5>많은 플랫폼</h5>
+
+<p>
+
+주문 실행에 집중합니다.
+
+</p>
+
+</div>
+
+<div class="middle">
+
+→
+
+</div>
+
+<div class="right">
+
+<h5>Tradeverse</h5>
+
+<p>
+
+전략을 지속적으로 운영하고 개선합니다.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="compare-row">
+
+<div class="left">
+
+<h5>많은 플랫폼</h5>
+
+<p>
+
+오늘의 추천 종목을 보여줍니다.
+
+</p>
+
+</div>
+
+<div class="middle">
+
+→
+
+</div>
+
+<div class="right">
+
+<h5>Scarlett</h5>
+
+<p>
+
+지금 분석할 가치가 있는 종목을
+
+실시간으로 선별합니다.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+<!-- ========================================================= -->
+<!-- WHO IS IT FOR -->
+<!-- ========================================================= -->
+
+<section class="persona-section">
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<span class="badge bg-warning-subtle text-warning rounded-pill px-3 py-2">
+
+For Everyone
+
+</span>
+
+<h2 class="display-5 fw-bold mt-4">
+
+누구를 위한 플랫폼인가요?
+
+</h2>
+
+<p class="lead text-muted">
+
+Tradeverse는 전업 트레이더만을 위한 플랫폼이 아닙니다.
+
+</p>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-lg-3">
+
+<div class="persona-card">
+
+<div class="emoji">💼</div>
+
+<h4>직장인</h4>
+
+<p>
+
+장중 내내 시장을 보기 어려운 투자자
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-3">
+
+<div class="persona-card">
+
+<div class="emoji">🏪</div>
+
+<h4>자영업자</h4>
+
+<p>
+
+업무 중에도 전략을 운영하고 싶은 투자자
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-3">
+
+<div class="persona-card">
+
+<div class="emoji">🌴</div>
+
+<h4>은퇴자</h4>
+
+<p>
+
+체계적인 투자 루틴을 만들고 싶은 분
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-3">
+
+<div class="persona-card">
+
+<div class="emoji">🌱</div>
+
+<h4>초보 투자자</h4>
+
+<p>
+
+명확한 기준부터 배우고 싶은 투자자
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="statement-box mt-5">
+
+<h3>
+
+복잡한 코딩도 필요하지 않습니다.
+
+</h3>
+
+<p>
+
+클릭만으로 전략을 만들고,
+
+자신만의 투자 방식을 운영할 수 있습니다.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+<!-- ========================================================= -->
+<!-- HOW -->
+<!-- ========================================================= -->
+
+<section class="solution-section">
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<span class="badge bg-info-subtle text-info rounded-pill px-3 py-2">
+
+How it Works
+
+</span>
+
+<h2 class="display-5 fw-bold mt-4">
+
+Tradeverse는 어떻게 문제를 해결할까요?
+
+</h2>
+
+<p class="lead text-muted">
+
+추천이 아니라 전략이 실행되는 구조를 만듭니다.
+
+</p>
+
+</div>
+
+<div class="solution-list">
+
+<div class="solution-item">
+
+<div class="icon">①</div>
+
+<div>
+
+<h3>클릭만으로 전략 생성</h3>
+
+<p>
+
+전략이 없어도,
+
+코딩을 몰라도 누구나 자신만의 전략을 만들 수 있습니다.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="solution-item">
+
+<div class="icon">②</div>
+
+<div>
+
+<h3>Scarlett 실시간 스캐너</h3>
+
+<p>
+
+매일 종목을 찾는 대신,
+
+지금 분석할 가치가 있는 종목을 빠르게 선별합니다.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="solution-item">
+
+<div class="icon">③</div>
+
+<div>
+
+<h3>자동 · 반자동 실행</h3>
+
+<p>
+
+감정이 아니라
+
+미리 설계한 전략에 따라 실행합니다.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="solution-item">
+
+<div class="icon">④</div>
+
+<div>
+
+<h3>거래 기록 & 차트 복기</h3>
+
+<p>
+
+모든 거래를 기록하고,
+
+복기하며 지속적으로 전략을 개선합니다.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+<!-- ========================================================= -->
+<!-- TARGET -->
+<!-- ========================================================= -->
+
+<section class="target-section">
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<span class="badge bg-warning-subtle text-warning rounded-pill px-3 py-2">
+
+Who is it for?
+
+</span>
+
+<h2 class="display-5 fw-bold mt-4">
+
+이런 분들에게 적합합니다.
+
+</h2>
+
+<p class="lead text-muted">
+
+아래 항목 중 하나라도 해당된다면
+
+Tradeverse가 도움이 될 수 있습니다.
+
+</p>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-lg-6">
+
+<div class="check-card">
+
+✓ 주식을 시작했지만 아직 명확한 기준이 없는 분
+
+</div>
+
+</div>
+
+<div class="col-lg-6">
+
+<div class="check-card">
+
+✓ 추천 종목이나 시장 분위기에 의존하는 분
+
+</div>
+
+</div>
+
+<div class="col-lg-6">
+
+<div class="check-card">
+
+✓ 매수·매도 타이밍 때문에 스트레스를 받는 분
+
+</div>
+
+</div>
+
+<div class="col-lg-6">
+
+<div class="check-card">
+
+✓ 손절과 익절 기준을 세우기 어려운 분
+
+</div>
+
+</div>
+
+<div class="col-lg-6">
+
+<div class="check-card">
+
+✓ 장중 시장을 계속 보기 어려운 직장인
+
+</div>
+
+</div>
+
+<div class="col-lg-6">
+
+<div class="check-card">
+
+✓ 미국주식 스윙트레이딩을 배우고 싶은 분
+
+</div>
+
+</div>
+
+<div class="col-lg-6">
+
+<div class="check-card">
+
+✓ 감정적인 매매 습관을 줄이고 싶은 분
+
+</div>
+
+</div>
+
+<div class="col-lg-6">
+
+<div class="check-card active">
+
+✓ 추천을 따라가기보다
+
+자신만의 전략을 운영하고 싶은 분
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+<!-- ========================================================= -->
+<!-- CORE VALUE -->
+<!-- ========================================================= -->
+
+<section class="core-section">
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<span class="badge bg-primary-subtle text-primary rounded-pill px-3 py-2">
+
+Our Principles
+
+</span>
+
+<h2 class="display-5 fw-bold mt-4">
+
+우리가 중요하게 생각하는 3가지
+
+</h2>
+
+</div>
+
+<div class="row g-5">
+
+<div class="col-lg-4">
+
+<div class="principle-card">
+
+<div class="number">01</div>
+
+<h3>
+
+누구나 전략을 만들 수 있어야 합니다.
+
+</h3>
+
+<p>
+
+전략 투자는 전문가만의 영역이 아닙니다.
+
+코딩을 몰라도 누구나
+
+자신만의 기준을 만들 수 있어야 합니다.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-4">
+
+<div class="principle-card">
+
+<div class="number">02</div>
+
+<h3>
+
+감정이 아니라 규칙으로
+
+</h3>
+
+<p>
+
+시장은 통제할 수 없습니다.
+
+하지만 대응 기준은
+
+미리 설계할 수 있습니다.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-4">
+
+<div class="principle-card">
+
+<div class="number">03</div>
+
+<h3>
+
+결과보다 행동
+
+</h3>
+
+<p>
+
+좋은 투자자는
+
+한 번의 수익이 아니라
+
+좋은 습관으로 만들어집니다.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+<!-- ========================================================= -->
+<!-- DASHBOARD -->
+<!-- ========================================================= -->
+
+<section class="dashboard-section">
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<span class="badge bg-primary-subtle text-primary rounded-pill px-3 py-2">
+
+Platform
+
+</span>
+
+<h2 class="display-5 fw-bold mt-4">
+
+Tradeverse에서 이렇게 운영합니다.
+
+</h2>
+
+<p class="lead text-muted">
+
+실제 투자 과정에서 필요한 기능만 남겼습니다.
+
+</p>
+
+</div>
+
+<div class="row align-items-center g-5">
+
+<div class="col-lg-7">
+
+<div class="dashboard-preview shadow-lg">
+
+<img src="assets/dashboard.png"
+
+class="img-fluid rounded-4">
+
+</div>
+
+</div>
+
+<div class="col-lg-5">
+
+<div class="feature-list">
+
+<div class="feature-item">
+
+<h4>전략 생성</h4>
+
+<p>코딩 없이 전략 설계</p>
+
+</div>
+
+<div class="feature-item">
+
+<h4>자동 · 반자동 실행</h4>
+
+<p>조건 충족 시 자동 실행</p>
+
+</div>
+
+<div class="feature-item">
+
+<h4>Scarlett</h4>
+
+<p>실시간 관심 종목 탐색</p>
+
+</div>
+
+<div class="feature-item">
+
+<h4>실시간 주문</h4>
+
+<p>주문 및 잔고 관리</p>
+
+</div>
+
+<div class="feature-item">
+
+<h4>전략 기록</h4>
+
+<p>모든 거래 저장</p>
+
+</div>
+
+<div class="feature-item">
+
+<h4>차트 복기</h4>
+
+<p>거래 일지 및 전략 개선</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+<!-- ========================================================= -->
+<!-- PROMISE -->
+<!-- ========================================================= -->
+
+<section class="promise-section">
+
+<div class="container">
+
+<div class="text-center">
+
+<span class="badge bg-danger-subtle text-danger rounded-pill px-3 py-2">
+
+Our Promise
+
+</span>
+
+<h2 class="display-5 fw-bold mt-4">
+
+우리가 약속하는 것
+
+</h2>
+
+</div>
+
+<div class="promise-card">
+
+<h1>
+
+"월 얼마를 벌 수 있습니다."
+
+<br>
+
+"100% 수익을 만들 수 있습니다."
+
+</h1>
+
+<div class="divider"></div>
+
+<p class="lead">
+
+Tradeverse는 이런 이야기를 하지 않습니다.
+
+</p>
+
+<p>
+
+시장은 누구도 통제할 수 없고,
+
+모든 투자에는 리스크가 존재하기 때문입니다.
+
+</p>
+
+<div class="promise-grid">
+
+<div>
+
+<h4>✓ 전략을 만들고</h4>
+
+</div>
+
+<div>
+
+<h4>✓ 스스로 검증하고</h4>
+
+</div>
+
+<div>
+
+<h4>✓ 지속적으로 개선하고</h4>
+
+</div>
+
+<div>
+
+<h4>✓ 스스로 성장하도록</h4>
+
+</div>
+
+</div>
+
+<h3 class="mt-5">
+
+Tradeverse가 약속하는 것은
+
+<strong>
+
+결과가 아니라
+
+좋은 투자 습관입니다.
+
+</strong>
+
+</h3>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+<!-- ========================================================= -->
+<!-- EDUCATION -->
+<!-- ========================================================= -->
+<section style="background:#fff;padding:140px 0;">
+    <div class="container" style="max-width:880px;">
+        <!-- Title -->
+        <div class="text-center">
+            <span style="
+                display:inline-block;
+                padding:8px 22px;
+                border-radius:999px;
+                background:#EEF4FF;
+                color:#4F6DFF;
+                font-size:14px;
+                font-weight:700;
+                letter-spacing:1px;">
+                EDUCATION
+            </span>
+            <h2 class="fw-bold mt-4"
+                style="
+                font-size:56px;
+                line-height:1.35;">
+                그래서 우리는<br>
+                교육과 특강도 함께 진행합니다.
+            </h2>
+        </div>
+        <!-- teacher -->
+        <div class="text-center my-5">
+            <img src="img/teacher2.png"
+                 class="img-fluid"
+                 style="
+                    width:420px;
+                    max-width:100%;">
+        </div>
+        <!-- Question -->
+        <div style="
+            max-width:760px;
+            margin:auto;
+            padding:45px;
+            background:#F8FAFF;
+            border-radius:28px;
+            text-align:center;">
+            <div style="
+                color:#4F6DFF;
+                font-size:15px;
+                font-weight:700;
+                letter-spacing:1px;
+                margin-bottom:18px;">
+                많은 분들이 이렇게 질문합니다.
+            </div>
+            <div style="
+                font-size:30px;
+                font-weight:700;
+                line-height:1.7;">
+                "전략을 만들라고 하는데,<br>
+                저는 처음이라 어떻게 해야 할지 모르겠습니다."
+            </div>
+        </div>
+        <!-- Description -->
+        <div class="text-center mt-5">
+            <p style="
+                font-size:22px;
+                line-height:2;
+                color:#444;">
+                Tradeverse는 좋은 플랫폼만으로 좋은 투자자가 만들어진다고 생각하지 않습니다.<br><br>
+                그래서 플랫폼과 함께 교육과 특강을 정기적으로 진행하고 있습니다.
+            </p>
+        </div>
+        <!-- Process -->
+        <div style="
+            margin-top:70px;
+            border-top:1px solid #ECECEC;">
+            <div class="edu-line">
+                시장 흐름을 읽고,
+            </div>
+            <div class="edu-line">
+                차트를 분석하고,
+            </div>
+            <div class="edu-line">
+                전략을 만들고,
+            </div>
+            <div class="edu-line">
+                실행 결과를 복기하며,
+            </div>
+            <div class="edu-line">
+                왜 그런 판단을 했는지 함께 고민합니다.
+            </div>
+        </div>
+        <!-- Philosophy -->
+        <div style="
+            margin-top:90px;
+            padding:80px 60px;
+            text-align:center;
+            background:#F7FAFF;
+            border-radius:32px;">
+            <div style="
+                color:#4F6DFF;
+                font-size:14px;
+                font-weight:700;
+                letter-spacing:1px;">
+                OUR PHILOSOPHY
+            </div>
+            <h3 class="fw-bold mt-4">
+                우리가 전달하고 싶은 것은
+            </h3>
+            <h1 style="
+                margin-top:35px;
+                font-size:54px;
+                line-height:1.5;">
+                <span style="color:#111;">
+                    '무엇을 살지'
+                </span>
+                <span style="
+                    color:#999;
+                    font-weight:400;">
+                    가 아니라,
+                </span>
+                <br>
+                <span class="gradient-text">
+                    '왜 그렇게 판단하는지'
+                </span>
+                입니다.
+            </h1>
+        </div>
+        <!-- Footer -->
+        <div class="text-center mt-5">
+            <p style="
+                font-size:21px;
+                line-height:2;
+                color:#666;">
+                교육은 서비스를 판매하기 위한 목적이 아니라,<br>
+                Tradeverse가 추구하는 전략 중심 투자와 건강한 투자 습관을 함께 만들어가기 위한<br>
+                하나의 콘텐츠입니다.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- ========================================================= -->
+<!-- FAQ -->
+<!-- ========================================================= -->
+
+<section class="faq-section">
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<span class="badge bg-primary-subtle text-primary rounded-pill px-3 py-2">
+
+FAQ
+
+</span>
+
+<h2 class="display-5 fw-bold mt-4">
+
+자주 묻는 질문
+
+</h2>
+
+<p class="lead text-muted">
+
+궁금한 점을 미리 확인해 보세요.
+
+</p>
+
+</div>
+
+<div class="accordion custom-faq" id="faq">
+
+<!-- FAQ1 -->
+
+<div class="accordion-item">
+
+<h2 class="accordion-header">
+
+<button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq1">
+
+주식을 잘 몰라도 가능한가요?
+
+</button>
+
+</h2>
+
+<div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faq">
+
+<div class="accordion-body">
+
+네. Tradeverse는 전문가뿐 아니라 일반 투자자도 자신의 기준을 만들 수 있도록 설계되었습니다.
+
+</div>
+
+</div>
+
+</div>
+
+<!-- FAQ2 -->
+
+<div class="accordion-item">
+
+<h2 class="accordion-header">
+
+<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">
+
+코딩을 해야 하나요?
+
+</button>
+
+</h2>
+
+<div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faq">
+
+<div class="accordion-body">
+
+아니요. 조건만 선택하면 누구나 전략을 만들 수 있습니다.
+
+</div>
+
+</div>
+
+</div>
+
+<!-- FAQ3 -->
+
+<div class="accordion-item">
+
+<h2 class="accordion-header">
+
+<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq3">
+
+자동매매가 부담스럽습니다.
+
+</button>
+
+</h2>
+
+<div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faq">
+
+<div class="accordion-body">
+
+처음부터 자동으로 운영할 필요는 없습니다.
+
+반자동 방식부터 시작할 수 있습니다.
+
+</div>
+
+</div>
+
+</div>
+
+<!-- FAQ4 -->
+
+<div class="accordion-item">
+
+<h2 class="accordion-header">
+
+<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq4">
+
+직장인도 가능한가요?
+
+</button>
+
+</h2>
+
+<div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faq">
+
+<div class="accordion-body">
+
+장중 내내 시장을 볼 수 없어도
+
+미리 전략을 설정하여 효율적으로 운영할 수 있습니다.
+
+</div>
+
+</div>
+
+</div>
+
+<!-- FAQ5 -->
+
+<div class="accordion-item">
+
+<h2 class="accordion-header">
+
+<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq5">
+
+추천 종목을 알려주나요?
+
+</button>
+
+</h2>
+
+<div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faq">
+
+<div class="accordion-body">
+
+아니요.
+
+Tradeverse는 추천 종목 서비스가 아닙니다.
+
+사용자가 직접 전략을 만들고 운영하도록 돕습니다.
+
+</div>
+
+</div>
+
+</div>
+
+<!-- FAQ6 -->
+
+<div class="accordion-item">
+
+<h2 class="accordion-header">
+
+<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq6">
+
+얼마의 자금이 필요한가요?
+
+</button>
+
+</h2>
+
+<div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faq">
+
+<div class="accordion-body">
+
+큰 자금보다
+
+명확한 기준과 리스크 관리가 더 중요합니다.
+
+</div>
+
+</div>
+
+</div>
+
+<!-- FAQ7 -->
+
+<div class="accordion-item">
+
+<h2 class="accordion-header">
+
+<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq7">
+
+서비스 이용 비용이 있나요?
+
+</button>
+
+</h2>
+
+<div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faq">
+
+<div class="accordion-body">
+
+현재 Tradeverse는
+
+<strong>오픈 베타 기념 프로모션</strong>으로
+
+모든 기능을 무료로 이용하실 수 있습니다.
+
+<br><br>
+
+단,
+
+증권사 수수료,
+
+환전 수수료,
+
+세금 등은
+
+거래 조건에 따라 발생할 수 있습니다.
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+
+<!-- ========================================================= -->
+<!-- FINAL CTA -->
+<!-- ========================================================= -->
+
+<section class="final-cta">
+
+<div class="container text-center">
+
+<span class="badge bg-light text-primary rounded-pill px-3 py-2">
+
+Start Today
+
+</span>
+
+<h1 class="display-2 fw-bold mt-5">
+
+더 많은 종목보다,
+
+<br>
+
+더 명확한 기준이 필요합니다.
+
+</h1>
+
+<p class="lead mt-5">
+
+지금 시장에서 필요한 것은
+
+더 많은 정보가 아니라,
+
+더 나은 투자 습관입니다.
+
+</p>
+
+<div class="statement-box mt-5">
+
+<h2>
+
+명확한 기준
+
+<span>→</span>
+
+일관된 실행
+
+<span>→</span>
+
+반복 가능한 습관
+
+</h2>
+
+</div>
+
+<div class="mt-5">
+
+<a href="#" class="btn btn-light btn-lg px-5 py-3 me-3">
+
+Tradeverse 시작하기
+
+</a>
+
+<a href="#" class="btn btn-outline-light btn-lg px-5 py-3">
+
+교육 프로그램 보기
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- ========================================================= -->
+<!-- FOOTER -->
+<!-- ========================================================= -->
+
+<footer class="footer-section">
+
+<div class="container text-center">
+
+<h2 class="display-4 fw-bold">
+
+Tradeverse
+
+</h2>
+
+<p class="lead mt-4">
+
+세상에는
+
+종목을 추천하는 서비스는 많습니다.
+
+<br>
+
+자동매매를 제공하는 플랫폼도 많습니다.
+
+</p>
+
+<div class="footer-quote">
+
+<h2>
+
+하지만
+
+<br>
+
+투자자를 성장시키는 플랫폼은
+
+많지 않습니다.
+
+</h2>
+
+</div>
+
+<div class="footer-manifesto">
+
+<div>
+
+추천보다 전략을
+
+</div>
+
+<div>
+
+감정보다 규칙을
+
+</div>
+
+<div>
+
+결과보다 프로세스를
+
+</div>
+
+</div>
+
+<p class="footer-desc">
+
+우리는 더 많은 거래를 만드는 것이 아니라,
+
+더 오래 살아남는 투자자를 만드는 것을 목표로 합니다.
+
+</p>
+
+<div class="footer-bottom">
+
+© 2026 Tradeverse
+
+</div>
+
+</div>
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<script>
+
+AOS.init({
+
+duration:900,
+
+once:true
+
+});
+
+</script>
+
+</body>
+</html>
+```
