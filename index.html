@@ -11,6 +11,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
 <style>
 
@@ -162,8 +163,6 @@ content:'';
 
 position:absolute;
 
-width:850px;
-height:850px;
 
 right:-200px;
 top:-250px;
@@ -964,9 +963,7 @@ opacity:.45;
 </head>
 <body>
 
-<!-- ========================================================= -->
-<!-- MINDSET -->
-<!-- ========================================================= -->
+<!-- 투자감각 -->
 <section class="mindset-section" style="padding:20px 0;">
     <div class="container">
         <div data-aos="zoom-in"
@@ -989,8 +986,9 @@ opacity:.45;
 </section>
 
 <!-- HERO -->
-<section class="hero" style="padding-top:100px; padding-bottom:150px;">
+<section class="hero" style="padding-top:100px; padding-bottom:0px;" >
     <div class="container text-center">
+    <!--<h5 data-aos="fade-up">트레이드버스: 누구나 거래할 수 있는 곳</h5>-->
     <h5 data-aos="fade-up">트레이드버스: 누구나 거래할 수 있는 곳</h5>
     <h1 data-aos="fade-up" data-aos-delay="100">
         종목을 쫓지 마세요.<br>
@@ -999,31 +997,20 @@ opacity:.45;
     </h1>
     <p data-aos="fade-up" data-aos-delay="200">
     트레이드버스는 추천 종목을 제공하는 서비스가 아닙니다.<br>
-    코딩 없이 전략을 만들고, 실행하고, 기록하고, 복기하며,<br>
-    지속적으로 개선할 수 있도록 돕는 <strong>웹 기반 전략 운영 플랫폼</strong>입니다.<br>
-    더 많은 종목을 찾는 것보다 중요한 것은 <strong>명확한 기준과 꾸준한 실행</strong>입니다.<br>
+    스스로 전략을 만들고, 실행하고, 기록하고, 복기하는,<br>
+    미국 주식 <strong>웹 기반 전략 운영 플랫폼</strong>입니다.<br>
+    <!--더 많은 종목을 찾는 것보다 중요한 것은 <strong>명확한 기준과 꾸준한 실행</strong>입니다.<br>-->
     우리는 여러분의 투자를 감이 아닌 시스템으로 운영할 수 있도록 돕습니다.
     </p>
     <div data-aos="fade-left" data-aos-delay="300" style="display: flex; flex-direction: column; align-items: center; flex-shrink: 0;">
-        <img src="img/scarlett_run_3d.png" 
+        <img src="img/scarlett_laptop.png" 
             alt="Tradeverse Mascot Scarlett" 
             class="scarlett-character" 
-            style="width: 250px; height: auto; padding-top: 30px;">
+            style="width: 400px; height: auto; padding-top: 30px;">
     </div>
-    <!--
-    <div class="mt-5" data-aos="fade-up" data-aos-delay="300">
-        <a href="https://trade.tradeverse.one" target="_blank" rel="noopener noreferrer"><button class="btn-main">Tradeverse 시작하기</button></a><a href="http://pf.kakao.com/_xlJxajX" target="_blank" rel="noopener noreferrer"><button class="btn-sub">카카오채널 문의하기</button></a>
-    </div>
-    <div class="quote" data-aos="fade-up">
-        추천을 받은 거래가 아니라,<br>
-        전략을 운영한 기록이 쌓이고 있습니다.
-        </div>
-    </div>
-    -->
 </section>
 
-
-<!-- SECTION 2 -->
+<!-- 추천 종목을 찾는 투자자에서 전략을 운영하는 투자자로 -->
 <section class="section2">
   <div class="container text-center">
     
@@ -1062,73 +1049,158 @@ opacity:.45;
       </div>
     </div>
 
-    <div class="change mt-5" data-aos="fade-up" data-aos-delay="300">
-        <h2>
-            트레이드버스는 투자자의 관점을 바꾸고자 합니다.
+    <div class="change mt-5 text-center" data-aos="zoom-in">
+        <h2 class="fw-bold mb-5">
+            트레이드버스는
+            <span class="gradient">투자자의 관점</span>을 바꾸고자 합니다.
         </h2>
-        <p class="mt-4 fs-4 lh-lg" style="font-size: 1.25rem; word-break: keep-all;">
-            종목을 따라가는 투자에서, <strong style="color: var(--primary-color, #0072ff);">전략을 운영하는 투자로</strong>.<br>
-            감정에 흔들리는 매매에서, <strong style="color: var(--primary-color, #0072ff);">규칙에 기반한 실행으로</strong>.<br>
-            일회성 수익을 노리는 방식에서, <strong style="color: var(--primary-color, #0072ff);">반복 가능한 투자 프로세스로</strong>.
-        </p>
+        <div style="
+            max-width:1000px;
+            margin:0 auto;
+            display:flex;
+            flex-direction:column;
+            gap:28px;
+        ">
+            <!-- 1 -->
+            <div style="
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                gap:28px;
+                flex-wrap:wrap;
+            ">
+                <div style="
+                    color:#7a7a7a;
+                    font-size:30px;
+                    font-weight:700;
+                ">
+                    ❌ 종목을 따라가는 투자
+                </div>
+
+                <div style="
+                    font-size:56px;
+                    font-weight:900;
+                    color:#4F6DFF;
+                    line-height:1;
+                ">
+                    →
+                </div>
+                <div style="
+                    color:#2563EB;
+                    font-size:34px;
+                    font-weight:900;
+                ">
+                    ✓ 전략을 운영하는 투자
+                </div>
+            </div>
+            <!-- 2 -->
+            <div style="
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                gap:28px;
+                flex-wrap:wrap;
+            ">
+                <div style="
+                    color:#7a7a7a;
+                    font-size:30px;
+                    font-weight:700;
+                ">
+                    ❌ 감정에 흔들리는 매매
+                </div>
+                <div style="
+                    font-size:56px;
+                    font-weight:900;
+                    color:#4F6DFF;
+                    line-height:1;
+                ">
+                    →
+                </div>
+                <div style="
+                    color:#2563EB;
+                    font-size:34px;
+                    font-weight:900;
+                ">
+                    ✓ 규칙에 기반한 실행
+                </div>
+            </div>
+            <!-- 3 -->
+            <div style="
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                gap:28px;
+                flex-wrap:wrap;
+            ">
+                <div style="
+                    color:#7a7a7a;
+                    font-size:30px;
+                    font-weight:700;
+                ">
+                    ❌ 일회성 수익 추구
+                </div>
+
+                <div style="
+                    font-size:56px;
+                    font-weight:900;
+                    color:#4F6DFF;
+                    line-height:1;
+                ">
+                    →
+                </div>
+                <div style="
+                    color:#2563EB;
+                    font-size:34px;
+                    font-weight:900;
+                ">
+                    ✓ 반복 가능한 투자 프로세스
+                </div>
+            </div>
+        </div>
     </div>
   </div>
 </section>
 
-
-<!-- ========================================================= -->
-<!-- WHY GOOD STOCKS AREN'T ENOUGH -->
-<!-- ========================================================= -->
-
+<!-- WHY INVESTORS FAIL : 왜 좋은 종목을 알아도 결과는 흔들릴까요? -->
 <section class="py-5 py-lg-7 bg-light">
-
     <div class="container" style="max-width:1100px;">
-
         <!-- Title -->
-
         <div class="text-center mb-5" data-aos="fade-up">
-
             <span class="badge bg-primary-subtle text-primary rounded-pill px-3 py-2 mb-3">
                 Why Investors Fail
             </span>
-
             <h2 class="fw-bold"
                 style="font-size:clamp(38px,4vw,54px);line-height:1.25;">
-
                 왜 좋은 종목을 알아도<br>
                 결과는 흔들릴까요?
-
             </h2>
-
-            <p class="mt-4 text-muted"
-               style="font-size:20px;">
-
+            <p class="mt-4">
                 좋은 종목을 찾았는데도 원하는 결과를 얻지 못했던 경험이 있으신가요?
-
             </p>
-
         </div>
-
-
-
+        <div class="mt-5" data-aos="zoom-in">
+            <img src="img/scarlett_question.png"
+                alt="왜 좋은 종목을 알아도 결과는 흔들릴까요?"
+                style="
+                    width:400px;
+                    max-width:900px;
+                    height:auto;
+                    display:block;
+                    margin:0 auto;
+                ">
+        </div>
         <div class="row justify-content-center">
-
             <div class="col-lg-10">
-
                 <div style="
                     background:white;
                     border-radius:32px;
                     overflow:hidden;
                     box-shadow:0 25px 70px rgba(0,0,0,.08);
                 ">
-
                     <div class="row g-0">
-
                         <!-- BEFORE -->
-
                         <div class="col-lg-6"
                              style="padding:55px;">
-
                             <span style="
                                 background:#FFE8E8;
                                 color:#FF4D4F;
@@ -1137,47 +1209,29 @@ opacity:.45;
                                 font-weight:700;
                                 font-size:14px;
                             ">
-
                                 BEFORE
-
                             </span>
-
                             <h3 class="fw-bold mt-4 mb-4">
-
                                 많은 투자자들이<br>
-
                                 반복하는 행동
-
                             </h3>
-
                             <div style="
                                 font-size:20px;
                                 line-height:2.2;
                             ">
-
                                 ❌ 수익이 나면 너무 빨리 팔고,<br>
-
                                 ❌ 손실이 나면 손절을 미루고,<br>
-
                                 ❌ 기준 없이 다시 진입하고,<br>
-
-                                ❌ 결국 같은 실수를 반복한 적은 없으신가요?
-
+                                ❌ 결국 같은 실수를 반복합니다.
                             </div>
-
                         </div>
-
-
-
                         <!-- AFTER -->
-
                         <div class="col-lg-6"
                              style="
                              background:linear-gradient(135deg,#4F6DFF,#2563EB);
                              color:white;
                              padding:55px;
                              ">
-
                             <span style="
                                 background:rgba(255,255,255,.18);
                                 padding:8px 18px;
@@ -1185,43 +1239,774 @@ opacity:.45;
                                 font-weight:700;
                                 font-size:14px;
                             ">
-
                                 TRADEVERSE
-
                             </span>
-
                             <h3 class="fw-bold mt-4 mb-4">
-
-                                Tradeverse가 집중한 문제
-
+                                Tradeverse가 만드는 변화
                             </h3>
-
                             <div style="
                                 font-size:20px;
-                                line-height:2;
-                                color:rgba(255,255,255,.92);
+                                line-height:2.2;
+                                color:rgba(255,255,255,.96);
                             ">
-
-                                문제는 정보가 부족해서가 아닐 수도 있습니다.<br><br>
-
-                                <strong style="
-                                    font-size:30px;
-                                    color:white;
-                                ">
-
-                                    문제는<br>
-
-                                    일관된 실행 구조가<br>
-
-                                    없기 때문일 수도 있습니다.
-
-                                </strong>
-
+                                ✅ 나만의 기준을 만들고<br>
+                                ✅ 기준대로 실행하고<br>
+                                ✅ 모든 거래를 기록하고<br>
+                                ✅ 데이터를 기반으로 개선합니다.
                             </div>
-
+                            <div style="
+                                margin-top:34px;
+                                padding-top:28px;
+                                border-top:1px solid rgba(255,255,255,.22);
+                            ">
+                                <div style="
+                                    font-size:16px;
+                                    opacity:.8;
+                                    margin-bottom:14px;
+                                    text-transform:uppercase;
+                                    letter-spacing:1px;
+                                ">
+                                    Tradeverse Philosophy
+                                </div>
+                                <div style="
+                                    font-size:30px;
+                                    font-weight:900;
+                                    line-height:1.45;
+                                ">
+                                    좋은 결과는<br>
+                                    <span style="color:#FFD95C;">
+                                        일관된 실행 구조
+                                    </span>
+                                    에서 시작됩니다.
+                                </div>
+                            </div>
                         </div>
-
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- MARKET INSIGHT: 우리가 발견한 투자 시장의 문제 -->
+<section class="market-section py-5 py-lg-7">
+<div class="container">
+<div class="text-center mb-5">
+<span class="badge bg-danger-subtle text-danger rounded-pill px-3 py-2">Market Insight</span>
+<h2 class="display-5 fw-bold mt-4">
+우리가 발견한
+<span class="gradient">
+투자 시장의 문제
+</span>
+</h2>
+<p class="mt-4">
+트레이드버스를 개발하며 증권사, 금융기관,
+투자 플랫폼 관계자들과 수많은 이야기를 나누었습니다.
+</p>
+</div>
+<div class="row g-4">
+<div class="col-lg-4">
+<div class="insight-card">
+<div class="icon" style="
+    font-size:72px;
+    line-height:1;
+    margin-bottom:24px;
+">
+    📈
+</div>
+<h4>추천 종목 중심 투자</h4>
+<p>
+많은 투자자들은
+투자 방법보다
+추천 종목을 먼저 찾고 있었습니다.
+</p>
+</div>
+</div>
+<div class="col-lg-4">
+<div class="insight-card">
+<div class="icon" style="
+    font-size:72px;
+    line-height:1;
+    margin-bottom:24px;
+">
+    💻
+</div>
+<h4>익숙한 HTS / MTS</h4>
+<p>
+새로운 플랫폼보다
+기존 환경을 더 선호하는
+사용자가 많았습니다.
+</p>
+</div>
+</div>
+<div class="col-lg-4">
+<div class="insight-card">
+<div class="icon" style="
+    font-size:72px;
+    line-height:1;
+    margin-bottom:24px;
+">
+    🧠
+</div>
+<h4>행동 변화의 어려움</h4>
+<p>
+좋은 서비스를 만드는 것보다
+행동을 바꾸는 일이
+훨씬 어렵다는 사실.
+</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- OUR STORY : 우리는 왜 트레이드버스를 만들게 되었을까요? -->
+<section class="story-section py-5 py-lg-7">
+
+<div class="container" style="max-width:900px;">
+
+    <!-- Title -->
+
+    <div class="text-center mb-5" data-aos="fade-up">
+
+        <span class="badge bg-primary-subtle text-primary rounded-pill px-3 py-2 mb-3">
+            OUR STORY
+        </span>
+
+        <h2 class="display-4 fw-bold mt-4">
+
+            우리는 왜<br>
+
+            <span class="gradient">
+                Tradeverse
+            </span>
+
+            를 만들게 되었을까요?
+
+        </h2>
+
+        <p class="mt-4">
+
+            Tradeverse는 자동매매 플랫폼을 만들기 위해<br>
+
+            시작된 프로젝트가 아닙니다.
+
+        </p>
+
+    </div>
+
+
+    <!-- Character -->
+
+<div class="text-center"
+     data-aos="zoom-in"
+     style="
+        margin-bottom:-30px;
+        position:relative;
+        z-index:2;
+     ">
+
+    <img src="img/scarlett_history.png"
+         alt="Tradeverse Story"
+
+         style="
+            width:100%;
+            max-width:820px;
+            height:auto;
+         ">
+
+</div>
+
+
+
+    <!-- Story Card -->
+
+    <div style="
+        background:white;
+        border-radius:30px;
+        padding:55px;
+        box-shadow:0 20px 60px rgba(0,0,0,.08);
+    ">
+
+        <blockquote style="
+            text-align:center;
+            font-size:36px;
+            font-weight:800;
+            line-height:1.5;
+            color:#2563EB;
+            margin-bottom:55px;
+        ">
+
+            "왜 대부분의 개인 투자자는<br>
+
+            좋은 종목을 알아도<br>
+
+            시장에서 살아남지 못할까?"
+
+        </blockquote>
+
+
+        <!-- STEP 1 -->
+
+        <div style="
+            display:flex;
+            gap:28px;
+            align-items:flex-start;
+            margin-bottom:35px;
+        ">
+
+            <div style="font-size:52px;">
+                🔍
+            </div>
+
+            <div>
+
+                <h4 class="fw-bold">
+
+                    처음에는 우리도 종목이 문제라고 생각했습니다.
+
+                </h4>
+
+                <p class="mb-0 mt-3">
+
+                    더 좋은 종목을 찾으면<br>
+
+                    더 좋은 결과가 나올 것이라고 믿었습니다.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+
+        <!-- STEP2 -->
+
+        <div style="
+            display:flex;
+            gap:28px;
+            align-items:flex-start;
+            margin:35px 0;
+        ">
+
+            <div style="font-size:52px;">
+                📈
+            </div>
+
+            <div>
+
+                <h4 class="fw-bold">
+
+                    하지만 수많은 투자 사례를 보며
+                    생각이 달라졌습니다.
+
+                </h4>
+
+                <p class="mb-0 mt-3">
+
+                    좋은 종목을 찾는 사람은 많았지만,<br>
+
+                    꾸준히 살아남는 사람은 많지 않았습니다.<br><br>
+
+                    그래서 우리는 수많은 거래를 기록하고,<br>
+
+                    실패한 이유를 하나씩 분석하기 시작했습니다.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+
+        <!-- STEP3 -->
+
+        <div style="
+            display:flex;
+            gap:28px;
+            align-items:flex-start;
+            margin-top:35px;
+        ">
+
+            <div style="font-size:52px;">
+                💡
+            </div>
+
+            <div>
+
+                <h3 class="fw-bold"
+                    style="line-height:1.6;">
+
+                    좋은 종목을 몰라서 실패하는 것이 아니라,
+
+                    <br>
+
+                    <span class="gradient">
+
+                        좋은 행동을 꾸준히 하지 못해서
+
+                    </span>
+
+                    실패한다는 것을 깨달았습니다.
+
+                </h3>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Conclusion -->
+
+        <div class="statement-box mt-5">
+
+            <h2 class="mt-4" style="line-height:1.6;">
+
+                그래서 우리는<br>
+
+                <span class="gradient">
+                    추천보다 전략을,<br>
+                    결과보다 프로세스를
+                </span>
+                <br>
+
+                만드는 플랫폼을 만들기로 했습니다.
+
+            </h2>
+
+        </div>
+
+</div>
+
+</section>
+
+<!-- BEHAVIOR_BASED INVESTING : 문제는 종목이 아니라 행동입니다. -->
+<section class="behavior-section py-5 py-lg-7">
+    <div class="container" style="max-width:1100px;">
+        <!-- TITLE -->
+        <div class="text-center mb-5">
+            <span class="badge bg-primary-subtle text-primary rounded-pill px-3 py-2 mb-3">
+                Behavior-Based Investing
+            </span>
+            <h2 class="fw-bold"
+                style="font-size:clamp(46px,4vw,68px);line-height:1.2;">
+                문제는 종목이 아니라<br>
+                <span class="gradient">행동입니다.</span>
+            </h2>
+            <p class="mt-4">
+                Tradeverse는 추천을 소비하는 투자에서<br>
+                <strong>전략을 운영하는 투자</strong>로 관점을 바꾸고자 합니다.
+            </p>
+        </div>
+        <!-- CHANGE -->
+        <div style="max-width:950px; margin:90px auto;">
+            <!-- 1 -->
+            <div style="text-align:center;">
+                <div style="
+                    color:#999;
+                    font-size:38px;
+                    font-weight:700;
+                ">
+                    종목을 따라가는 투자
+                </div>
+                <div style="
+                    font-size:90px;
+                    color:#d9d9d9;
+                    line-height:1;
+                    margin:20px 0;
+                ">
+                    ↓
+                </div>
+                <div style="
+                    font-size:52px;
+                    font-weight:900;
+                    color:#2563EB;
+                ">전략을 운영하는 투자
+                </div>
+            </div>
+        </div>
+        <!-- FLOW -->
+        <div class="text-center mt-5">
+
+            <h3 class="fw-bold mb-5"
+                style="
+                font-size:38px;
+                line-height:1.4;
+                ">
+
+                좋은 투자자는
+
+                <span style="color:#F59E0B;">
+                    하루 만에 만들어지지 않습니다.
+                </span>
+
+            </h3>
+
+            <div style="
+                display:flex;
+                justify-content:center;
+                align-items:stretch;
+                gap:18px;
+                flex-wrap:nowrap;
+                overflow-x:auto;
+                padding-bottom:10px;
+            ">
+
+                <!-- 행동 -->
+                <div style="
+                    width:185px;
+                    min-width:185px;
+                    background:#fff;
+                    border-radius:22px;
+                    padding:30px 18px;
+                    box-shadow:0 15px 35px rgba(0,0,0,.06);
+                    text-align:center;
+                ">
+
+                    <div style="font-size:50px;">🌱</div>
+
+                    <h4 class="fw-bold mt-3"
+                        style="font-size:28px;">
+                        좋은 행동
+                    </h4>
+
+                    <p class="text-muted mt-3 mb-0">
+                        올바른 선택을<br>
+                        반복합니다.
+                    </p>
+
+                </div>
+
+                <div style="
+                    font-size:34px;
+                    color:#d0d0d0;
+                    font-weight:900;
+                    display:flex;
+                    align-items:center;
+                    flex-shrink:0;
+                ">
+                    →
+                </div>
+
+                <!-- 전략 -->
+                <div style="
+                    width:185px;
+                    min-width:185px;
+                    background:#fff;
+                    border-radius:22px;
+                    padding:30px 18px;
+                    box-shadow:0 15px 35px rgba(0,0,0,.06);
+                    text-align:center;
+                ">
+
+                    <div style="font-size:50px;">🎯</div>
+
+                    <h4 class="fw-bold mt-3"
+                        style="font-size:28px;">
+                        좋은 전략
+                    </h4>
+
+                    <p class="text-muted mt-3 mb-0">
+                        기준을 만들고<br>
+                        실행합니다.
+                    </p>
+
+                </div>
+
+                <div style="
+                    font-size:34px;
+                    color:#d0d0d0;
+                    font-weight:900;
+                    display:flex;
+                    align-items:center;
+                    flex-shrink:0;
+                ">
+                    →
+                </div>
+
+                <!-- 습관 -->
+                <div style="
+                    width:185px;
+                    min-width:185px;
+                    background:#fff;
+                    border-radius:22px;
+                    padding:30px 18px;
+                    box-shadow:0 15px 35px rgba(0,0,0,.06);
+                    text-align:center;
+                ">
+
+                    <div style="font-size:50px;">📅</div>
+
+                    <h4 class="fw-bold mt-3"
+                        style="font-size:28px;">
+                        좋은 습관
+                    </h4>
+
+                    <p class="text-muted mt-3 mb-0">
+                        기록하고<br>
+                        개선합니다.
+                    </p>
+
+                </div>
+
+                <div style="
+                    font-size:34px;
+                    color:#d0d0d0;
+                    font-weight:900;
+                    display:flex;
+                    align-items:center;
+                    flex-shrink:0;
+                ">
+                    →
+                </div>
+
+                <!-- 결과 -->
+                <div style="
+                    width:185px;
+                    min-width:185px;
+                    background:#FFF8EA;
+                    border:2px solid #FFD56A;
+                    border-radius:22px;
+                    padding:30px 18px;
+                    box-shadow:0 18px 45px rgba(245,158,11,.18);
+                    text-align:center;
+                ">
+
+                    <div style="font-size:50px;">🏆</div>
+
+                    <h4 class="fw-bold mt-3"
+                        style="
+                        font-size:30px;
+                        color:#D97706;
+                        ">
+                        좋은 결과
+                    </h4>
+
+                    <p style="
+                        color:#7C5A00;
+                        margin-bottom:0;
+                    ">
+                        꾸준한 과정이<br>
+                        성과를 만듭니다.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="behavior-philosophy">
+    <div class="container text-center">
+        <h2 class="display-3 fw-bold">
+        성과는 목표가 아닙니다.<br>
+        올바른 프로세스를 꾸준히 반복할 때,<br>
+        <strong>성과는 자연스럽게 따라오는 결과</strong>라고 믿습니다.
+        </h2>
+    </div>
+</section>
+
+<!-- 그래서 트레이드버스는 다릅니다. -->
+<section class="difference-section py-5 py-lg-7">
+
+<div class="container" style="max-width:1100px;">
+
+    <div class="text-center mb-5">
+
+        <span class="badge bg-success-subtle text-success rounded-pill px-3 py-2 mb-3">
+            Why Tradeverse
+        </span>
+
+        <h2 class="fw-bold"
+            style="font-size:clamp(42px,4vw,60px);">
+
+            그래서
+            <span class="gradient">트레이드버스는 다릅니다.</span>
+
+        </h2>
+
+    </div>
+
+    <div style="
+        background:#fff;
+        border-radius:26px;
+        overflow:hidden;
+        box-shadow:0 18px 50px rgba(0,0,0,.06);
+    ">
+
+        <!-- Header -->
+
+        <div style="
+            display:grid;
+            grid-template-columns:1fr 1fr;
+        ">
+
+            <div style="
+                padding:28px;
+                background:#f7f7f7;
+                text-align:center;
+                font-size:28px;
+                font-weight:800;
+                color:#666;
+            ">
+                많은 플랫폼
+            </div>
+
+            <div style="
+                padding:28px;
+                background:linear-gradient(135deg,#4F6DFF,#2563EB);
+                text-align:center;
+                font-size:32px;
+                font-weight:900;
+                color:white;
+            ">
+                Tradeverse
+            </div>
+
+        </div>
+
+        <!-- ROW 1 -->
+
+        <div style="
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            border-top:1px solid #eee;
+        ">
+
+            <div style="
+                padding:38px;
+                font-size:28px;
+                color:#666;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                text-align:center;
+            ">
+
+                수익률을 중심으로<br>
+                이야기합니다.
+
+            </div>
+
+            <div style="
+                padding:38px;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                text-align:center;
+                font-size:34px;
+                font-weight:800;
+            ">
+
+                <span class="gradient">
+                    투자자의 행동을<br>
+                    개선합니다.
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- ROW 2 -->
+
+        <div style="
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            border-top:1px solid #eee;
+        ">
+
+            <div style="
+                padding:38px;
+                font-size:28px;
+                color:#666;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                text-align:center;
+            ">
+
+                주문 실행에만<br>
+                집중합니다.
+
+            </div>
+
+            <div style="
+                padding:38px;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                text-align:center;
+                font-size:34px;
+                font-weight:800;
+            ">
+
+                <span class="gradient">
+                    전략을 운영하고<br>
+                    지속적으로 개선합니다.
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- ROW 3 -->
+
+        <div style="
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            border-top:1px solid #eee;
+        ">
+
+            <div style="
+                padding:38px;
+                font-size:28px;
+                color:#666;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                text-align:center;
+            ">
+
+                오늘의 추천 종목을<br>
+                보여줍니다.
+
+            </div>
+
+            <div style="
+                padding:38px;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                text-align:center;
+                font-size:32px;
+                font-weight:800;
+            ">
+
+                <div>
+
+                    <div style="
+                        font-size:22px;
+                        color:#4F6DFF;
+                        margin-bottom:10px;
+                        font-weight:700;
+                    ">
+                        Scarlett
+                    </div>
+
+                    <span class="gradient">
+                        분석할 가치가 있는 종목을<br>
+                        실시간으로 선별합니다.
+                    </span>
 
                 </div>
 
@@ -1229,55 +2014,13 @@ opacity:.45;
 
         </div>
 
-
-
-        <!-- Bottom Message -->
-
-        <div class="text-center mt-5"
-             data-aos="fade-up">
-
-            <p style="
-                font-size:22px;
-                line-height:2;
-                color:#444;
-                max-width:900px;
-                margin:auto;
-            ">
-
-                Tradeverse는 바로 이 지점에 집중했습니다.<br><br>
-
-                투자에 필요한 것은 더 많은 추천이 아니라,
-
-            </p>
-
-            <h2 class="fw-bold mt-3"
-                style="
-                font-size:42px;
-                line-height:1.5;
-                ">
-
-                스스로 판단하고 실행할 수 있는<br>
-
-                <span class="gradient">
-
-                    나만의 전략 운영 시스템
-
-                </span>
-
-                입니다.
-
-            </h2>
-
-        </div>
-
     </div>
+
+</div>
 
 </section>
 
-<!-- =========================
-PROCESS
-========================= -->
-
+<!-- PROCESS -->
 <section class="process-section py-5 py-lg-7">
 
     <div class="container">
@@ -1436,206 +2179,280 @@ PROCESS
 
 </section>
 
-<!-- ========================================================= -->
-<!-- REAL DATA -->
-<!-- ========================================================= -->
+<!-- PLATFORM : 트레이드버스에서 이렇게 운영합니다. -->
+<section class="dashboard-section py-5 py-lg-7">
 
-<section class="stats-section py-5 py-lg-7">
+<div class="container" style="max-width:1280px;">
 
-    <div class="container">
+    <!-- Title -->
 
-        <div class="text-center mb-5" data-aos="fade-up">
+    <div class="text-center mb-5">
 
-            <span class="badge bg-success-subtle text-success rounded-pill px-3 py-2 mb-3">
-                Real Data
-            </span>
+        <span class="badge bg-primary-subtle text-primary rounded-pill px-3 py-2">
+            Platform
+        </span>
 
-            <h2 class="display-5 fw-bold">
+        <h2 class="display-5 fw-bold mt-4">
 
-                추천을 받은 거래가 아니라,<br>
+            트레이드버스에서<br>
 
-                <span class="gradient">
-                    전략을 운영한 기록이 쌓이고 있습니다.
-                </span>
+            이렇게 운영합니다.
 
-            </h2>
+        </h2>
 
-            <p class="lead text-muted mt-4">
-
-                Tradeverse에서는 수익률보다<br>
-
-                전략을 만들고 실행하고 개선한 과정이
-                계속 쌓이고 있습니다.
-
-            </p>
-
-        </div>
-
-        <div class="row g-4 mt-4">
-
-            <div class="col-lg-3 col-6">
-
-                <div class="stat-card">
-
-                    <h2 class="counter">0</h2>
-
-                    <span>생성된 전략</span>
-
-                </div>
-
-            </div>
-
-            <div class="col-lg-3 col-6">
-
-                <div class="stat-card">
-
-                    <h2 class="counter">0</h2>
-
-                    <span>자동 실행 주문</span>
-
-                </div>
-
-            </div>
-
-            <div class="col-lg-3 col-6">
-
-                <div class="stat-card">
-
-                    <h2 class="counter">0</h2>
-
-                    <span>실제 매매 케이스</span>
-
-                </div>
-
-            </div>
-
-            <div class="col-lg-3 col-6">
-
-                <div class="stat-card">
-
-                    <h2 class="counter">0</h2>
-
-                    <span>거래일지 · 복기</span>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="row mt-4">
-
-            <div class="col-md-4">
-
-                <div class="mini-card">
-
-                    전략 개선 사례
-
-                </div>
-
-            </div>
-
-            <div class="col-md-4">
-
-                <div class="mini-card">
-
-                    실제 사용자 후기
-
-                </div>
-
-            </div>
-
-            <div class="col-md-4">
-
-                <div class="mini-card">
-
-                    실제 사용자 수익 인증
-
-                </div>
-
-            </div>
-
-        </div>
+        <p class="mt-4">실제 투자 과정에서 필요한 기능만 담았습니다.</p>
 
     </div>
 
-</section>
 
-<!-- ========================================================= -->
-<!-- OUR STORY -->
-<!-- ========================================================= -->
 
-<section class="story-section">
+    <!-- Dashboard -->
 
-    <div class="container">
+    <div class="text-center mb-5">
 
-        <div class="row align-items-center">
+        <img src="img/dashboard.png"
 
-            <div class="col-lg-5" data-aos="fade-right">
+             class="img-fluid"
 
-                <span class="story-label">
+             style="
+                border-radius:28px;
+                box-shadow:0 25px 70px rgba(0,0,0,.12);
+             ">
 
-                    OUR STORY
+    </div>
 
-                </span>
 
-                <h2 class="display-5 fw-bold mt-4">
 
-                    우리는 왜<br>
+    <!-- Features -->
 
-                    Tradeverse를 만들게 되었을까요?
+    <div class="row g-4">
 
-                </h2>
+        <!-- 1 -->
 
-                <p class="lead mt-4">
+        <div class="col-lg-6">
 
-                    Tradeverse는 자동매매 플랫폼을 만들기 위해
-                    시작된 프로젝트가 아닙니다.
+            <div style="
+                display:flex;
+                gap:22px;
+                align-items:flex-start;
+                background:#fff;
+                padding:28px;
+                border-radius:22px;
+                box-shadow:0 12px 35px rgba(0,0,0,.05);
+                height:100%;
+            ">
 
-                </p>
+                <div style="font-size:48px;">🎯</div>
 
-            </div>
+                <div>
 
-            <div class="col-lg-7" data-aos="fade-left">
+                    <h4 class="fw-bold">
 
-                <div class="story-card">
-
-                    <blockquote>
-
-                        "왜 대부분의 개인 투자자는<br>
-
-                        좋은 종목을 알아도
-                        시장에서 살아남지 못할까?"
-
-                    </blockquote>
-
-                    <hr>
-
-                    <p>
-
-                        처음에는 우리도 종목이 문제라고 생각했습니다.
-
-                        더 좋은 종목을 찾으면
-                        더 좋은 결과가 나올 것이라고 믿었습니다.
-
-                    </p>
-
-                    <p>
-
-                        하지만 수많은 투자 사례와
-                        실제 거래를 보며 생각이 달라졌습니다.
-
-                    </p>
-
-                    <h4>
-
-                        좋은 종목을 몰라서 실패하는 것이 아니라,
-
-                        좋은 행동을 꾸준히 하지 못해서
-                        실패한다는 것을 깨달았습니다.
+                        전략 생성
 
                     </h4>
 
+                    <p class="mb-0 text-muted">
+
+                        코딩 없이 나만의 투자 전략을 설계합니다.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- 2 -->
+
+        <div class="col-lg-6">
+
+            <div style="
+                display:flex;
+                gap:22px;
+                align-items:flex-start;
+                background:#fff;
+                padding:28px;
+                border-radius:22px;
+                box-shadow:0 12px 35px rgba(0,0,0,.05);
+                height:100%;
+            ">
+
+                <div style="font-size:48px;">⚡</div>
+
+                <div>
+
+                    <h4 class="fw-bold">
+
+                        자동 · 반자동 실행
+
+                    </h4>
+
+                    <p class="mb-0 text-muted">
+
+                        조건이 충족되면 자동 또는 반자동으로 실행합니다.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- 3 -->
+
+        <div class="col-lg-6">
+
+            <div style="
+                display:flex;
+                gap:22px;
+                align-items:flex-start;
+                background:#fff;
+                padding:28px;
+                border-radius:22px;
+                box-shadow:0 12px 35px rgba(0,0,0,.05);
+                height:100%;
+            ">
+
+                <div style="font-size:48px;">🔍</div>
+
+                <div>
+
+                    <h4 class="fw-bold">
+
+                        Scarlett
+
+                    </h4>
+
+                    <p class="mb-0 text-muted">
+
+                        실시간으로 분석할 가치가 있는 종목을 탐색합니다.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- 4 -->
+
+        <div class="col-lg-6">
+
+            <div style="
+                display:flex;
+                gap:22px;
+                align-items:flex-start;
+                background:#fff;
+                padding:28px;
+                border-radius:22px;
+                box-shadow:0 12px 35px rgba(0,0,0,.05);
+                height:100%;
+            ">
+
+                <div style="font-size:48px;">💳</div>
+
+                <div>
+
+                    <h4 class="fw-bold">
+
+                        실시간 주문
+
+                    </h4>
+
+                    <p class="mb-0 text-muted">
+
+                        주문과 잔고를 한 화면에서 관리합니다.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- 5 -->
+
+        <div class="col-lg-6">
+
+            <div style="
+                display:flex;
+                gap:22px;
+                align-items:flex-start;
+                background:#fff;
+                padding:28px;
+                border-radius:22px;
+                box-shadow:0 12px 35px rgba(0,0,0,.05);
+                height:100%;
+            ">
+
+                <div style="font-size:48px;">📝</div>
+
+                <div>
+
+                    <h4 class="fw-bold">
+
+                        전략 기록
+
+                    </h4>
+
+                    <p class="mb-0 text-muted">
+
+                        모든 거래와 전략을 자동으로 기록합니다.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- 6 -->
+
+        <div class="col-lg-6">
+
+            <div style="
+                display:flex;
+                gap:22px;
+                align-items:flex-start;
+                background:#fff;
+                padding:28px;
+                border-radius:22px;
+                box-shadow:0 12px 35px rgba(0,0,0,.05);
+                height:100%;
+            ">
+
+                <div style="font-size:48px;">📈</div>
+
+                <div>
+
+                    <h4 class="fw-bold">
+
+                        차트 복기
+
+                    </h4>
+
+                    <p class="mb-0 text-muted">
+
+                        거래를 복기하고 전략을 지속적으로 개선합니다.
+
+                    </p>
+
                 </div>
 
             </div>
@@ -1644,1051 +2461,173 @@ PROCESS
 
     </div>
 
-</section>
-
-
-
-<section class="market-section py-5 py-lg-7">
-
-<div class="container">
-
-<div class="text-center mb-5">
-
-<span class="badge bg-danger-subtle text-danger rounded-pill px-3 py-2">
-
-Market Insight
-
-</span>
-
-<h2 class="display-5 fw-bold mt-4">
-
-우리가 발견한
-
-<span class="gradient">
-
-투자 시장의 문제
-
-</span>
-
-</h2>
-
-<p class="lead text-muted mt-3">
-
-Tradeverse를 개발하며 증권사, 금융기관,
-투자 플랫폼 관계자들과 수많은 이야기를 나누었습니다.
-
-</p>
-
-</div>
-
-<div class="row g-4">
-
-<div class="col-lg-4">
-
-<div class="insight-card">
-
-<div class="icon">📈</div>
-
-<h4>추천 종목 중심 투자</h4>
-
-<p>
-
-많은 투자자들은
-투자 방법보다
-추천 종목을 먼저 찾고 있었습니다.
-
-</p>
-
-</div>
-
-</div>
-
-<div class="col-lg-4">
-
-<div class="insight-card">
-
-<div class="icon">💻</div>
-
-<h4>익숙한 HTS / MTS</h4>
-
-<p>
-
-새로운 플랫폼보다
-기존 환경을 더 선호하는
-사용자가 많았습니다.
-
-</p>
-
-</div>
-
-</div>
-
-<div class="col-lg-4">
-
-<div class="insight-card">
-
-<div class="icon">🧠</div>
-
-<h4>행동 변화의 어려움</h4>
-
-<p>
-
-좋은 서비스를 만드는 것보다
-행동을 바꾸는 일이
-훨씬 어렵다는 사실.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="statement-box mt-5">
-
-<h3>
-
-그래서 우리는
-
-<strong>
-
-또 하나의 추천 서비스가 아니라
-
-</strong>
-
-</h3>
-
-<h2 class="gradient mt-4">
-
-스스로 전략을 만들고,
-
-운영하고,
-
-개선하는 플랫폼을 만들기로 했습니다.
-
-</h2>
-
-</div>
-
 </div>
 
 </section>
 
-
-
-<section class="behavior-section">
-
-<div class="container">
-
-<div class="section-title text-center mb-5">
-
-<h2>
-
-문제는 종목이 아니라
-
-<span class="gradient">행동입니다.</span>
-
-</h2>
-
-<p>
-
-Tradeverse는 투자 방식을 바꾸는 것이 아니라
-
-투자자의 행동을 바꾸는 플랫폼입니다.
-
-</p>
-
-</div>
-
-<div class="row align-items-center">
-
-<!-- BEFORE -->
-
-<div class="col-lg-5">
-
-<div class="compare-card before-card">
-
-<span class="badge bg-danger mb-4">
-
-Before
-
-</span>
-
-<h3>
-
-종목을 따라가는 투자
-
-</h3>
-
-<ul>
-
-<li>좋은 종목만 찾는다</li>
-
-<li>뉴스를 따라간다</li>
-
-<li>추천 종목에 의존한다</li>
-
-<li>감정적으로 매매한다</li>
-
-</ul>
-
-</div>
-
-</div>
-
-<!-- ARROW -->
-
-<div class="col-lg-2 text-center">
-
-<div class="compare-arrow">
-
-→
-
-</div>
-
-</div>
-
-<!-- AFTER -->
-
-<div class="col-lg-5">
-
-<div class="compare-card after-card">
-
-<span class="badge bg-success mb-4">
-
-After
-
-</span>
-
-<h3>
-
-전략을 운영하는 투자
-
-</h3>
-
-<ul>
-
-<li>나만의 기준을 만든다</li>
-
-<li>전략대로 실행한다</li>
-
-<li>거래를 기록한다</li>
-
-<li>복기하며 개선한다</li>
-
-</ul>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="row mt-5">
-
-<div class="col-lg-10 mx-auto">
-
-<div class="glass-card text-center">
-
-<h3>
-
-결과를 결정하는 것은
-
-<strong>
-
-무엇을 샀는가가 아니라
-
-어떻게 행동했는가입니다.
-
-</strong>
-
-</h3>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
+<!-- REAL DATA : 추천을 받은 거래가 아니라, 전략을 운영한 기록이 쌓이고 있습니다. -->
+<section class="stats-section py-5 py-lg-7">
+    <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+            <span class="badge bg-success-subtle text-success rounded-pill px-3 py-2 mb-3">
+                Real Data
+            </span>
+            <h2 class="display-5 fw-bold">
+                추천을 받은 거래가 아니라,<br>
+                <span class="gradient">
+                    전략을 운영한 기록이 쌓이고 있습니다.
+                </span>
+            </h2>
+            <p class="mt-4">
+                수익률은 결과입니다.<br>
+                우리는 그 결과를 만드는 <strong>과정과 기록</strong>에 집중합니다.
+            </p>
+        </div>
+        <div class="row g-4 mt-4">
+            <div class="col-lg-3 col-6">
+                <div class="stat-card">
+                    <h2 class="counter" data-target="4093">0</h2>
+                    <span>생성된 전략</span>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6">
+                <div class="stat-card">
+                    <h2 class="counter" data-target="3780">0</h2>
+                    <span>자동 실행 주문</span>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6">
+                <div class="stat-card">
+                    <h2 class="counter" data-target="3021">0</h2>
+                    <span>실제 매매 케이스</span>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6">
+                <div class="stat-card">
+                    <h2 class="counter" data-target="2999">0</h2>
+                    <span>거래일지 · 복기</span>
+                </div>
+            </div>
+        </div>
+        <div class="mt-5 pt-5" data-aos="fade-up">
+
+            <div class="text-center mb-5">
+
+                <span class="badge bg-primary-subtle text-primary rounded-pill px-3 py-2 mb-3">
+                    Reviews
+                </span>
+
+                <h3 class="fw-bold" style="font-size:2.2rem;">
+                    트레이드버스를 사용하고 있는 사용자들의 이야기
+                </h3>
+
+            </div>
+
+            <div class="swiper reviewSwiper" style="padding-bottom:50px;">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+
+                        <div style="
+                            background:#fff;
+                            border:1px solid #eef2f7;
+                            border-radius:22px;
+                            padding:14px;
+                            box-shadow:0 12px 35px rgba(0,0,0,.06);
+                        ">
+                            <img src="img/capture1.png"
+                                class="img-fluid rounded-4"
+                                style="width:100%;display:block;"
+                                alt="사용자 후기 1">
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <div style="
+                            background:#fff;
+                            border:1px solid #eef2f7;
+                            border-radius:22px;
+                            padding:14px;
+                            box-shadow:0 12px 35px rgba(0,0,0,.06);
+                        ">
+                            <img src="img/capture2.png"
+                                class="img-fluid rounded-4"
+                                style="width:100%;display:block;"
+                                alt="사용자 후기 2">
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <div style="
+                            background:#fff;
+                            border:1px solid #eef2f7;
+                            border-radius:22px;
+                            padding:14px;
+                            box-shadow:0 12px 35px rgba(0,0,0,.06);
+                        ">
+                            <img src="img/capture3.png"
+                                class="img-fluid rounded-4"
+                                style="width:100%;display:block;"
+                                alt="사용자 후기 3">
+                        </div>
+
+                    </div>
+
+                    
+                    <div class="swiper-slide">
+
+                        <div style="
+                            background:#fff;
+                            border:1px solid #eef2f7;
+                            border-radius:22px;
+                            padding:14px;
+                            box-shadow:0 12px 35px rgba(0,0,0,.06);
+                        ">
+                            <img src="img/capture4.png"
+                                class="img-fluid rounded-4"
+                                style="width:100%;display:block;"
+                                alt="사용자 후기 3">
+                        </div>
+
+                    </div>
+
+                    <!-- 나중에 여기만 계속 추가하면 됩니다 -->
+                    <!--
+                    <div class="swiper-slide">
+                        <div style="
+                            background:#fff;
+                            border:1px solid #eef2f7;
+                            border-radius:22px;
+                            padding:14px;
+                            box-shadow:0 12px 35px rgba(0,0,0,.06);
+                        ">
+                            <img src="img/capture4.png"
+                                class="img-fluid rounded-4"
+                                style="width:100%;display:block;">
+                        </div>
+                    </div>
+                    -->
+
+                </div>
+
+                <div class="swiper-pagination mt-4"></div>
+
+            </div>
+
+            <p class="text-center text-muted mt-4 small">
+                *실제 사용자들의 카카오톡 채널 후기 캡처입니다.
+            </p>
+
+        </div>
+    </div>
 </section>
 
-
-
-<section class="behavior-philosophy">
-
-<div class="container text-center">
-
-<span class="badge bg-primary-subtle text-primary rounded-pill px-3 py-2">
-
-Behavior-Based Investing
-
-</span>
-
-<h2 class="display-3 fw-bold mt-5">
-
-좋은 행동은
-
-<br>
-
-좋은 전략을 만들고,
-
-<br>
-
-좋은 전략은
-
-<br>
-
-좋은 결과를 만듭니다.
-
-</h2>
-
-<div class="process-box mt-5">
-
-<h3>
-
-우리는
-
-성과보다
-
-<strong class="gradient">
-
-성과를 만들어내는 프로세스
-
-</strong>
-
-를 더 중요하게 생각합니다.
-
-</h3>
-
-</div>
-
-<div class="mt-5">
-
-<div class="process-flow">
-
-분석
-
-<span>→</span>
-
-전략
-
-<span>→</span>
-
-실행
-
-<span>→</span>
-
-기록
-
-<span>→</span>
-
-복기
-
-<span>→</span>
-
-개선
-
-<span>→</span>
-
-습관
-
-<span>→</span>
-
-성과
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- ========================================================= -->
-<!-- INVESTMENT PROCESS -->
-<!-- ========================================================= -->
-
-<section class="process-section">
-
-<div class="container">
-
-<div class="text-center mb-5">
-
-<span class="badge bg-primary-subtle text-primary rounded-pill px-3 py-2">
-
-Investment Process
-
-</span>
-
-<h2 class="display-5 fw-bold mt-4">
-
-Tradeverse 투자 프로세스
-
-</h2>
-
-<p class="lead text-muted">
-
-성과는 좋은 전략이 아니라,
-
-좋은 프로세스가 반복될 때 만들어집니다.
-
-</p>
-
-</div>
-
-<div class="process-wrapper">
-
-<div class="process-step">
-
-<div class="step-number">01</div>
-
-<h4>분석</h4>
-
-<p>시장 이해</p>
-
-</div>
-
-<div class="process-arrow">→</div>
-
-<div class="process-step">
-
-<div class="step-number">02</div>
-
-<h4>전략</h4>
-
-<p>기준 설계</p>
-
-</div>
-
-<div class="process-arrow">→</div>
-
-<div class="process-step">
-
-<div class="step-number">03</div>
-
-<h4>실행</h4>
-
-<p>자동 · 반자동</p>
-
-</div>
-
-<div class="process-arrow">→</div>
-
-<div class="process-step">
-
-<div class="step-number">04</div>
-
-<h4>기록</h4>
-
-<p>거래 저장</p>
-
-</div>
-
-<div class="process-arrow">→</div>
-
-<div class="process-step">
-
-<div class="step-number">05</div>
-
-<h4>복기</h4>
-
-<p>차트 분석</p>
-
-</div>
-
-<div class="process-arrow">→</div>
-
-<div class="process-step">
-
-<div class="step-number">06</div>
-
-<h4>개선</h4>
-
-<p>전략 수정</p>
-
-</div>
-
-<div class="process-arrow">→</div>
-
-<div class="process-step">
-
-<div class="step-number">07</div>
-
-<h4>습관</h4>
-
-<p>반복 실행</p>
-
-</div>
-
-<div class="process-arrow">→</div>
-
-<div class="process-step active">
-
-<div class="step-number">08</div>
-
-<h4>성과</h4>
-
-<p>자연스러운 결과</p>
-
-</div>
-
-</div>
-
-<div class="statement-box mt-5">
-
-<h3>
-
-성과는 목표가 아니라,
-
-<strong>
-
-올바른 프로세스가 반복될 때
-
-</strong>
-
-자연스럽게 따라오는 결과입니다.
-
-</h3>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-
-<!-- ========================================================= -->
-<!-- DIFFERENCE -->
-<!-- ========================================================= -->
-
-<section class="difference-section">
-
-<div class="container">
-
-<div class="text-center mb-5">
-
-<span class="badge bg-success-subtle text-success rounded-pill px-3 py-2">
-
-Why Tradeverse
-
-</span>
-
-<h2 class="display-5 fw-bold mt-4">
-
-그래서
-
-<span class="gradient">
-
-Tradeverse는 다릅니다.
-
-</span>
-
-</h2>
-
-</div>
-
-<div class="compare-table">
-
-<div class="compare-row">
-
-<div class="left">
-
-<h5>많은 플랫폼</h5>
-
-<p>
-
-수익률을 중심으로 이야기합니다.
-
-</p>
-
-</div>
-
-<div class="middle">
-
-→
-
-</div>
-
-<div class="right">
-
-<h5>Tradeverse</h5>
-
-<p>
-
-투자자의 행동을 개선합니다.
-
-</p>
-
-</div>
-
-</div>
-
-<div class="compare-row">
-
-<div class="left">
-
-<h5>많은 플랫폼</h5>
-
-<p>
-
-주문 실행에 집중합니다.
-
-</p>
-
-</div>
-
-<div class="middle">
-
-→
-
-</div>
-
-<div class="right">
-
-<h5>Tradeverse</h5>
-
-<p>
-
-전략을 지속적으로 운영하고 개선합니다.
-
-</p>
-
-</div>
-
-</div>
-
-<div class="compare-row">
-
-<div class="left">
-
-<h5>많은 플랫폼</h5>
-
-<p>
-
-오늘의 추천 종목을 보여줍니다.
-
-</p>
-
-</div>
-
-<div class="middle">
-
-→
-
-</div>
-
-<div class="right">
-
-<h5>Scarlett</h5>
-
-<p>
-
-지금 분석할 가치가 있는 종목을
-
-실시간으로 선별합니다.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-
-<!-- ========================================================= -->
-<!-- WHO IS IT FOR -->
-<!-- ========================================================= -->
-
-<section class="persona-section">
-
-<div class="container">
-
-<div class="text-center mb-5">
-
-<span class="badge bg-warning-subtle text-warning rounded-pill px-3 py-2">
-
-For Everyone
-
-</span>
-
-<h2 class="display-5 fw-bold mt-4">
-
-누구를 위한 플랫폼인가요?
-
-</h2>
-
-<p class="lead text-muted">
-
-Tradeverse는 전업 트레이더만을 위한 플랫폼이 아닙니다.
-
-</p>
-
-</div>
-
-<div class="row g-4">
-
-<div class="col-lg-3">
-
-<div class="persona-card">
-
-<div class="emoji">💼</div>
-
-<h4>직장인</h4>
-
-<p>
-
-장중 내내 시장을 보기 어려운 투자자
-
-</p>
-
-</div>
-
-</div>
-
-<div class="col-lg-3">
-
-<div class="persona-card">
-
-<div class="emoji">🏪</div>
-
-<h4>자영업자</h4>
-
-<p>
-
-업무 중에도 전략을 운영하고 싶은 투자자
-
-</p>
-
-</div>
-
-</div>
-
-<div class="col-lg-3">
-
-<div class="persona-card">
-
-<div class="emoji">🌴</div>
-
-<h4>은퇴자</h4>
-
-<p>
-
-체계적인 투자 루틴을 만들고 싶은 분
-
-</p>
-
-</div>
-
-</div>
-
-<div class="col-lg-3">
-
-<div class="persona-card">
-
-<div class="emoji">🌱</div>
-
-<h4>초보 투자자</h4>
-
-<p>
-
-명확한 기준부터 배우고 싶은 투자자
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="statement-box mt-5">
-
-<h3>
-
-복잡한 코딩도 필요하지 않습니다.
-
-</h3>
-
-<p>
-
-클릭만으로 전략을 만들고,
-
-자신만의 투자 방식을 운영할 수 있습니다.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-
-<!-- ========================================================= -->
-<!-- HOW -->
-<!-- ========================================================= -->
-
-<section class="solution-section">
-
-<div class="container">
-
-<div class="text-center mb-5">
-
-<span class="badge bg-info-subtle text-info rounded-pill px-3 py-2">
-
-How it Works
-
-</span>
-
-<h2 class="display-5 fw-bold mt-4">
-
-Tradeverse는 어떻게 문제를 해결할까요?
-
-</h2>
-
-<p class="lead text-muted">
-
-추천이 아니라 전략이 실행되는 구조를 만듭니다.
-
-</p>
-
-</div>
-
-<div class="solution-list">
-
-<div class="solution-item">
-
-<div class="icon">①</div>
-
-<div>
-
-<h3>클릭만으로 전략 생성</h3>
-
-<p>
-
-전략이 없어도,
-
-코딩을 몰라도 누구나 자신만의 전략을 만들 수 있습니다.
-
-</p>
-
-</div>
-
-</div>
-
-<div class="solution-item">
-
-<div class="icon">②</div>
-
-<div>
-
-<h3>Scarlett 실시간 스캐너</h3>
-
-<p>
-
-매일 종목을 찾는 대신,
-
-지금 분석할 가치가 있는 종목을 빠르게 선별합니다.
-
-</p>
-
-</div>
-
-</div>
-
-<div class="solution-item">
-
-<div class="icon">③</div>
-
-<div>
-
-<h3>자동 · 반자동 실행</h3>
-
-<p>
-
-감정이 아니라
-
-미리 설계한 전략에 따라 실행합니다.
-
-</p>
-
-</div>
-
-</div>
-
-<div class="solution-item">
-
-<div class="icon">④</div>
-
-<div>
-
-<h3>거래 기록 & 차트 복기</h3>
-
-<p>
-
-모든 거래를 기록하고,
-
-복기하며 지속적으로 전략을 개선합니다.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-
-<!-- ========================================================= -->
-<!-- TARGET -->
-<!-- ========================================================= -->
-
-<section class="target-section">
-
-<div class="container">
-
-<div class="text-center mb-5">
-
-<span class="badge bg-warning-subtle text-warning rounded-pill px-3 py-2">
-
-Who is it for?
-
-</span>
-
-<h2 class="display-5 fw-bold mt-4">
-
-이런 분들에게 적합합니다.
-
-</h2>
-
-<p class="lead text-muted">
-
-아래 항목 중 하나라도 해당된다면
-
-Tradeverse가 도움이 될 수 있습니다.
-
-</p>
-
-</div>
-
-<div class="row g-4">
-
-<div class="col-lg-6">
-
-<div class="check-card">
-
-✓ 주식을 시작했지만 아직 명확한 기준이 없는 분
-
-</div>
-
-</div>
-
-<div class="col-lg-6">
-
-<div class="check-card">
-
-✓ 추천 종목이나 시장 분위기에 의존하는 분
-
-</div>
-
-</div>
-
-<div class="col-lg-6">
-
-<div class="check-card">
-
-✓ 매수·매도 타이밍 때문에 스트레스를 받는 분
-
-</div>
-
-</div>
-
-<div class="col-lg-6">
-
-<div class="check-card">
-
-✓ 손절과 익절 기준을 세우기 어려운 분
-
-</div>
-
-</div>
-
-<div class="col-lg-6">
-
-<div class="check-card">
-
-✓ 장중 시장을 계속 보기 어려운 직장인
-
-</div>
-
-</div>
-
-<div class="col-lg-6">
-
-<div class="check-card">
-
-✓ 미국주식 스윙트레이딩을 배우고 싶은 분
-
-</div>
-
-</div>
-
-<div class="col-lg-6">
-
-<div class="check-card">
-
-✓ 감정적인 매매 습관을 줄이고 싶은 분
-
-</div>
-
-</div>
-
-<div class="col-lg-6">
-
-<div class="check-card active">
-
-✓ 추천을 따라가기보다
-
-자신만의 전략을 운영하고 싶은 분
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-
-<!-- ========================================================= -->
 <!-- CORE VALUE -->
-<!-- ========================================================= -->
-
 <section class="core-section">
 
 <div class="container">
@@ -2795,211 +2734,114 @@ Our Principles
 
 </section>
 
-
-
-
-<!-- ========================================================= -->
-<!-- DASHBOARD -->
-<!-- ========================================================= -->
-
-<section class="dashboard-section">
+<!-- HOW -->
+<section class="solution-section">
 
 <div class="container">
 
 <div class="text-center mb-5">
 
-<span class="badge bg-primary-subtle text-primary rounded-pill px-3 py-2">
+<span class="badge bg-info-subtle text-info rounded-pill px-3 py-2">
 
-Platform
-
-</span>
-
-<h2 class="display-5 fw-bold mt-4">
-
-Tradeverse에서 이렇게 운영합니다.
-
-</h2>
-
-<p class="lead text-muted">
-
-실제 투자 과정에서 필요한 기능만 남겼습니다.
-
-</p>
-
-</div>
-
-<div class="row align-items-center g-5">
-
-<div class="col-lg-7">
-
-<div class="dashboard-preview shadow-lg">
-
-<img src="assets/dashboard.png"
-
-class="img-fluid rounded-4">
-
-</div>
-
-</div>
-
-<div class="col-lg-5">
-
-<div class="feature-list">
-
-<div class="feature-item">
-
-<h4>전략 생성</h4>
-
-<p>코딩 없이 전략 설계</p>
-
-</div>
-
-<div class="feature-item">
-
-<h4>자동 · 반자동 실행</h4>
-
-<p>조건 충족 시 자동 실행</p>
-
-</div>
-
-<div class="feature-item">
-
-<h4>Scarlett</h4>
-
-<p>실시간 관심 종목 탐색</p>
-
-</div>
-
-<div class="feature-item">
-
-<h4>실시간 주문</h4>
-
-<p>주문 및 잔고 관리</p>
-
-</div>
-
-<div class="feature-item">
-
-<h4>전략 기록</h4>
-
-<p>모든 거래 저장</p>
-
-</div>
-
-<div class="feature-item">
-
-<h4>차트 복기</h4>
-
-<p>거래 일지 및 전략 개선</p>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-
-<!-- ========================================================= -->
-<!-- PROMISE -->
-<!-- ========================================================= -->
-
-<section class="promise-section">
-
-<div class="container">
-
-<div class="text-center">
-
-<span class="badge bg-danger-subtle text-danger rounded-pill px-3 py-2">
-
-Our Promise
+How it Works
 
 </span>
 
 <h2 class="display-5 fw-bold mt-4">
 
-우리가 약속하는 것
+Tradeverse는 어떻게 문제를 해결할까요?
 
 </h2>
 
-</div>
+<p class="mt-4">
 
-<div class="promise-card">
-
-<h1>
-
-"월 얼마를 벌 수 있습니다."
-
-<br>
-
-"100% 수익을 만들 수 있습니다."
-
-</h1>
-
-<div class="divider"></div>
-
-<p class="lead">
-
-Tradeverse는 이런 이야기를 하지 않습니다.
+추천이 아니라 전략이 실행되는 구조를 만듭니다.
 
 </p>
+
+</div>
+
+<div class="solution-list">
+
+<div class="solution-item">
+
+<div class="icon">①</div>
+
+<div>
+
+<h3>클릭만으로 전략 생성</h3>
 
 <p>
 
-시장은 누구도 통제할 수 없고,
+전략이 없어도,
 
-모든 투자에는 리스크가 존재하기 때문입니다.
+코딩을 몰라도 누구나 자신만의 전략을 만들 수 있습니다.
 
 </p>
 
-<div class="promise-grid">
+</div>
+
+</div>
+
+<div class="solution-item">
+
+<div class="icon">②</div>
 
 <div>
 
-<h4>✓ 전략을 만들고</h4>
+<h3>Scarlett 실시간 스캐너</h3>
+
+<p>
+
+매일 종목을 찾는 대신,
+
+지금 분석할 가치가 있는 종목을 빠르게 선별합니다.
+
+</p>
 
 </div>
+
+</div>
+
+<div class="solution-item">
+
+<div class="icon">③</div>
 
 <div>
 
-<h4>✓ 스스로 검증하고</h4>
+<h3>자동 · 반자동 실행</h3>
+
+<p>
+
+감정이 아니라
+
+미리 설계한 전략에 따라 실행합니다.
+
+</p>
 
 </div>
+
+</div>
+
+<div class="solution-item">
+
+<div class="icon">④</div>
 
 <div>
 
-<h4>✓ 지속적으로 개선하고</h4>
+<h3>거래 기록 & 차트 복기</h3>
+
+<p>
+
+모든 거래를 기록하고,
+
+복기하며 지속적으로 전략을 개선합니다.
+
+</p>
 
 </div>
 
-<div>
-
-<h4>✓ 스스로 성장하도록</h4>
-
 </div>
-
-</div>
-
-<h3 class="mt-5">
-
-Tradeverse가 약속하는 것은
-
-<strong>
-
-결과가 아니라
-
-좋은 투자 습관입니다.
-
-</strong>
-
-</h3>
 
 </div>
 
@@ -3007,154 +2849,2125 @@ Tradeverse가 약속하는 것은
 
 </section>
 
+<!-- WHO IS IT FOR : 이런 분들에게 적합합니다 -->
+<section class="target-section py-5 py-lg-7">
 
+<div class="container">
 
+    <div class="text-center mb-5">
 
-<!-- ========================================================= -->
-<!-- EDUCATION -->
-<!-- ========================================================= -->
-<section style="background:#fff;padding:140px 0;">
-    <div class="container" style="max-width:880px;">
-        <!-- Title -->
-        <div class="text-center">
-            <span style="
-                display:inline-block;
-                padding:8px 22px;
-                border-radius:999px;
-                background:#EEF4FF;
-                color:#4F6DFF;
-                font-size:14px;
-                font-weight:700;
-                letter-spacing:1px;">
-                EDUCATION
+        <span class="badge bg-warning-subtle text-warning rounded-pill px-3 py-2">
+            Who is it for?
+        </span>
+
+        <h2 class="display-5 fw-bold mt-4">
+            이런 분들에게 적합합니다.
+        </h2>
+
+        <p class="mt-4">
+            아래 항목 중 하나라도 해당된다면<br>
+            Tradeverse가 도움이 될 수 있습니다.
+        </p>
+
+    </div>
+
+    <div class="row g-4">
+
+        <!-- 1 -->
+        <div class="col-lg-6">
+
+            <div style="
+                background:#fff;
+                border-radius:22px;
+                padding:32px;
+                box-shadow:0 12px 35px rgba(0,0,0,.06);
+                height:100%;
+                display:flex;
+                align-items:center;
+                gap:24px;
+            ">
+
+                <div style="font-size:54px;">🎯</div>
+
+                <div style="font-size:22px;font-weight:700;line-height:1.6;">
+                    주식을 시작했지만<br>
+                    매매 기준이 아직 없는 분
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- 2 -->
+
+        <div class="col-lg-6">
+
+            <div style="
+                background:#fff;
+                border-radius:22px;
+                padding:32px;
+                box-shadow:0 12px 35px rgba(0,0,0,.06);
+                height:100%;
+                display:flex;
+                align-items:center;
+                gap:24px;
+            ">
+
+                <div style="font-size:54px;">🔭</div>
+
+                <div style="font-size:22px;font-weight:700;line-height:1.6;">
+                    추천 종목만 따라 사거나,<br>
+                    시장 분위기에 의존하는 분
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- 3 -->
+
+        <div class="col-lg-6">
+
+            <div style="
+                background:#fff;
+                border-radius:22px;
+                padding:32px;
+                box-shadow:0 12px 35px rgba(0,0,0,.06);
+                height:100%;
+                display:flex;
+                align-items:center;
+                gap:24px;
+            ">
+
+                <div style="font-size:54px;">😥</div>
+
+                <div style="font-size:22px;font-weight:700;line-height:1.6;">
+                    매수·매도 타이밍 때문에<br>
+                    항상 고민하는 분
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- 4 -->
+
+        <div class="col-lg-6">
+
+            <div style="
+                background:#fff;
+                border-radius:22px;
+                padding:32px;
+                box-shadow:0 12px 35px rgba(0,0,0,.06);
+                height:100%;
+                display:flex;
+                align-items:center;
+                gap:24px;
+            ">
+
+                <div style="font-size:54px;">🛡️</div>
+
+                <div style="font-size:22px;font-weight:700;line-height:1.6;">
+                    손절과 익절 기준을<br>
+                    세우기 어려운 분
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- 5 -->
+
+        <div class="col-lg-6">
+
+            <div style="
+                background:#fff;
+                border-radius:22px;
+                padding:32px;
+                box-shadow:0 12px 35px rgba(0,0,0,.06);
+                height:100%;
+                display:flex;
+                align-items:center;
+                gap:24px;
+            ">
+
+                <div style="font-size:54px;">💼</div>
+
+                <div style="font-size:22px;font-weight:700;line-height:1.6;">
+                    장중에 차트를 게속 볼 수 없는<br>
+                    직장인
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- 6 -->
+
+        <div class="col-lg-6">
+
+            <div style="
+                background:#fff;
+                border-radius:22px;
+                padding:32px;
+                box-shadow:0 12px 35px rgba(0,0,0,.06);
+                height:100%;
+                display:flex;
+                align-items:center;
+                gap:24px;
+            ">
+
+                <div style="font-size:54px;">🎓</div>
+
+                <div style="font-size:22px;font-weight:700;line-height:1.6;">
+                    미국주식 데이 및 스윙트레이딩을<br>
+                    체계적으로 배우고 싶은 분
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- 7 -->
+
+        <div class="col-lg-6">
+
+            <div style="
+                background:#fff;
+                border-radius:22px;
+                padding:32px;
+                box-shadow:0 12px 35px rgba(0,0,0,.06);
+                height:100%;
+                display:flex;
+                align-items:center;
+                gap:24px;
+            ">
+
+                <div style="font-size:54px;">🧠</div>
+
+                <div style="font-size:22px;font-weight:700;line-height:1.6;">
+                    감정적인 매매를<br>
+                    줄이고 싶은 분
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- 8 -->
+
+        <div class="col-lg-6">
+
+            <div style="
+                background:#fff;
+                border-radius:22px;
+                padding:32px;
+                box-shadow:0 18px 45px rgba(79,109,255,.12);
+                height:100%;
+                display:flex;
+                align-items:center;
+                gap:24px;
+            ">
+
+                <div style="font-size:58px;">🚀</div>
+
+                <div style="
+                    font-size:22px;
+                    font-weight:800;
+                    line-height:1.6;
+                    color:#2563EB;
+                ">
+                    추천을 따라가기보다<br>
+                    자신만의 전략을 만들고 운영하고 싶은 분
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+<!-- OUR PROMISE : 우리가 약속하는 것 -->
+<section class="promise-section py-5 py-lg-7">
+
+    <div class="container" style="max-width:900px;">
+
+        <div class="text-center mb-5">
+
+            <span class="badge bg-danger-subtle text-danger rounded-pill px-3 py-2 mb-3">
+                Our Promise
             </span>
-            <h2 class="fw-bold mt-4"
-                style="
-                font-size:56px;
-                line-height:1.35;">
-                그래서 우리는<br>
-                교육과 특강도 함께 진행합니다.
+
+            <h2 class="fw-bold"
+                style="font-size:clamp(42px,4vw,60px);">
+
+                우리가 약속하는 것
+
             </h2>
+
         </div>
-        <!-- teacher -->
-        <div class="text-center my-5">
-            <img src="img/teacher2.png"
-                 class="img-fluid"
-                 style="
-                    width:420px;
-                    max-width:100%;">
-        </div>
-        <!-- Question -->
+
+
+        <!-- 하지 않는 약속 -->
+
         <div style="
+            text-align:center;
+            margin-bottom:70px;
+        ">
+
+            <div style="
+                font-size:62px;
+                margin-bottom:20px;
+            ">
+                ❌
+            </div>
+
+            <h3 class="fw-bold mb-4"
+                style="
+                font-size:38px;
+                color:#222;
+                ">
+
+                우리는 이런 약속을 하지 않습니다.
+
+            </h3>
+
+            <div style="
+                display:inline-block;
+                background:#FFF5F5;
+                border:2px solid #FFD6D6;
+                border-radius:22px;
+                padding:30px 50px;
+                margin-top:20px;
+            ">
+
+                <div style="
+                    font-size:28px;
+                    color:#D32F2F;
+                    font-weight:700;
+                    line-height:2;
+                ">
+
+                    ✕ "월 얼마를 벌 수 있습니다."<br>
+
+                    ✕ "100% 수익을 만들 수 있습니다."
+
+                </div>
+
+            </div>
+
+            <p class="mt-5"
+               style="
+                font-size:21px;
+                color:#666;
+                line-height:1.9;
+                max-width:680px;
+                margin:auto;
+               ">
+
+                시장은 누구도 예측하거나 통제할 수 없으며,<br>
+
+                모든 투자에는 항상 리스크가 존재하기 때문입니다.
+
+            </p>
+
+        </div>
+
+
+
+        <!-- 화살표 -->
+
+        <div class="text-center mb-5">
+
+            <div style="
+                font-size:70px;
+                color:#4F6DFF;
+                font-weight:900;
+            ">
+                ↓
+            </div>
+
+        </div>
+
+
+
+        <!-- 약속 -->
+
+        <div style="text-align:center;">
+
+            <div style="
+                font-size:62px;
+                margin-bottom:20px;
+            ">
+                ✅
+            </div>
+
+            <h3 class="fw-bold mb-5"
+                style="
+                font-size:38px;
+                color:#222;
+                ">
+
+                대신 다음 환경을 제공합니다.
+
+            </h3>
+
+            <div style="
+                display:flex;
+                flex-direction:column;
+                gap:18px;
+                max-width:520px;
+                margin:auto;
+            ">
+
+                <div style="
+                    background:#F7F9FC;
+                    border-radius:18px;
+                    padding:22px;
+                    font-size:26px;
+                    font-weight:700;
+                ">
+                    ✓ 스스로 전략을 만들고
+                </div>
+
+                <div style="
+                    background:#F7F9FC;
+                    border-radius:18px;
+                    padding:22px;
+                    font-size:26px;
+                    font-weight:700;
+                ">
+                    ✓ 스스로 검증하고
+                </div>
+
+                <div style="
+                    background:#F7F9FC;
+                    border-radius:18px;
+                    padding:22px;
+                    font-size:26px;
+                    font-weight:700;
+                ">
+                    ✓ 지속적으로 개선하고
+                </div>
+
+                <div style="
+                    background:#EEF5FF;
+                    border:2px solid #4F6DFF;
+                    color:#2563EB;
+                    border-radius:18px;
+                    padding:24px;
+                    font-size:28px;
+                    font-weight:800;
+                ">
+                    ✓ 스스로 성장할 수 있도록 돕겠습니다.
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- 마지막 선언 -->
+
+        <div class="text-center mt-5 pt-5">
+
+            <p style="
+                font-size:24px;
+                color:#666;
+                margin-bottom:20px;
+            ">
+
+                Tradeverse가 약속하는 것은
+
+            </p>
+
+            <h2 class="fw-bold"
+                style="
+                font-size:clamp(38px,4vw,56px);
+                line-height:1.5;
+                ">
+
+                <span class="gradient">
+
+                    결과가 아니라,
+
+                    좋은 투자 습관입니다.
+
+                </span>
+
+            </h2>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- MEET YOUR MENTOR -->
+<section style="background:#F8FAFF;padding:140px 0;">
+
+<div class="container" style="max-width:1100px;">
+
+    <!-- Title -->
+
+    <div class="text-center">
+
+ <span style="
+            display:inline-block;
+            padding:8px 22px;
+            border-radius:999px;
+            background:#EEF4FF;
+            color:#4F6DFF;
+            font-size:14px;
+            font-weight:700;
+            letter-spacing:1px;">
+
+            MEET YOUR MENTOR
+
+        </span>
+
+        <h2 class="fw-bold mt-4"
+            style="
+            font-size:52px;
+            line-height:1.35;
+        ">
+
+            전략은<br>
+
+            <span class="gradient">
+
+                경험에서 시작됩니다.
+
+            </span>
+
+        </h2>
+
+        <p class="mt-4"
+           style="
+            font-size:23px;
+            color:#666;
+            line-height:2;
+            max-width:780px;
+            margin:auto;
+        ">
+
+            실제 시장에서 전략을 설계하고 운영하며 얻은 경험을<br>
+
+            교육과 Tradeverse 플랫폼에 그대로 담았습니다.
+
+        </p>
+
+    </div>
+
+
+
+    <!-- Quick Summary -->
+
+    <div class="text-center mt-5 mb-5">
+
+        <div style="
+            display:inline-flex;
+            gap:14px;
+            flex-wrap:wrap;
+            justify-content:center;
+        ">
+
+            <span style="
+                background:white;
+                border:1px solid #E5EAF2;
+                padding:12px 24px;
+                border-radius:999px;
+                font-weight:700;
+            ">
+                🎓 Harvard MBA
+            </span>
+
+            <span style="
+                background:white;
+                border:1px solid #E5EAF2;
+                padding:12px 24px;
+                border-radius:999px;
+                font-weight:700;
+            ">
+                📈 8년+ 트레이딩
+            </span>
+
+            <span style="
+                background:white;
+                border:1px solid #E5EAF2;
+                padding:12px 24px;
+                border-radius:999px;
+                font-weight:700;
+            ">
+                🤖 AI 플랫폼 개발
+            </span>
+
+            <span style="
+                background:white;
+                border:1px solid #E5EAF2;
+                padding:12px 24px;
+                border-radius:999px;
+                font-weight:700;
+            ">
+                🇺🇸 미국주식 전략
+            </span>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Teacher -->
+
+    <div class="text-center my-5">
+
+        <img src="img/teacher2.png"
+
+             class="img-fluid"
+
+             style="
+                width:460px;
+                max-width:100%;
+             ">
+
+    </div>
+
+
+
+    <!-- Academic & Experience -->
+
+    <div class="row g-4 mt-5">
+
+        <!-- Academic -->
+
+        <div class="col-lg-6">
+
+            <div style="
+                background:white;
+                border-radius:30px;
+                padding:48px;
+                height:100%;
+                box-shadow:0 18px 45px rgba(0,0,0,.06);
+            ">
+
+                <div style="font-size:56px;">🎓</div>
+
+                <h3 class="fw-bold mt-4 mb-3">
+
+                    학력
+
+                </h3>
+
+                <hr style="margin:24px 0;">
+
+                <h5 class="fw-bold">
+
+                    Harvard University
+
+                </h5>
+
+                <p style="line-height:1.9;">
+
+                    경영학 석사 (MBA)<br>
+
+                    헤지펀드 및 전략기획 전공
+
+                </p>
+
+                <h5 class="fw-bold mt-5">
+
+                    Georgia Institute of Technology
+
+                </h5>
+
+                <p class="mb-0"
+                   style="line-height:1.9;">
+
+                    전자공학 학사 (B.S.)<br>
+
+                    시스템 제어(Systems & Control) 전공
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Experience -->
+
+        <div class="col-lg-6">
+
+            <div style="
+                background:white;
+                border-radius:30px;
+                padding:48px;
+                height:100%;
+                box-shadow:0 18px 45px rgba(0,0,0,.06);
+            ">
+
+                <div style="font-size:56px;">💼</div>
+
+                <h3 class="fw-bold mt-4 mb-3">
+
+                    주요 경험
+
+                </h3>
+
+                <hr style="margin:24px 0;">
+
+                <div style="
+                    display:grid;
+                    grid-template-columns:1fr 1fr;
+                    gap:30px;
+                ">
+
+                    <div>
+
+                        <div style="
+                            font-size:34px;
+                            font-weight:900;
+                            color:#2563EB;
+                            margin-bottom:10px;
+                        ">
+                            8+
+                        </div>
+
+                        <div style="
+                            font-size:17px;
+                            line-height:1.8;
+                        ">
+                            년 이상<br>
+                            퀀트 기반<br>
+                            트레이딩
+                        </div>
+
+                    </div>
+
+                    <div>
+
+                        <div style="
+                            font-size:34px;
+                            font-weight:900;
+                            color:#2563EB;
+                            margin-bottom:10px;
+                        ">
+                            AI
+                        </div>
+
+                        <div style="
+                            font-size:17px;
+                            line-height:1.8;
+                        ">
+                            금융 플랫폼<br>
+                            기획 및 개발
+                        </div>
+
+                    </div>
+
+                    <div>
+
+                        <div style="
+                            font-size:34px;
+                            font-weight:900;
+                            color:#2563EB;
+                            margin-bottom:10px;
+                        ">
+                            US
+                        </div>
+
+                        <div style="
+                            font-size:17px;
+                            line-height:1.8;
+                        ">
+                            미국 주식시장<br>
+                            전략 운용
+                        </div>
+
+                    </div>
+
+                    <div>
+
+                        <div style="
+                            font-size:34px;
+                            font-weight:900;
+                            color:#2563EB;
+                            margin-bottom:10px;
+                        ">
+                            AUTO
+                        </div>
+
+                        <div style="
+                            font-size:17px;
+                            line-height:1.8;
+                        ">
+                            자동매매 전략<br>
+                            설계 및 운영
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- Certifications -->
+
+    <div style="
+        background:white;
+        border-radius:30px;
+        padding:60px;
+        margin-top:45px;
+        box-shadow:0 18px 50px rgba(0,0,0,.06);
+    ">
+
+        <div class="text-center">
+
+            <div style="font-size:56px;">
+                📜
+            </div>
+
+            <h3 class="fw-bold mt-4">
+
+                자격 및 전문 교육
+
+            </h3>
+
+            <p class="text-muted mt-3"
+               style="
+                font-size:18px;
+                line-height:1.8;
+            ">
+
+                국내·미국 투자 관련 자격과<br>
+
+                글로벌 금융 교육 과정을 이수했습니다.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="row text-center mt-5 g-4">
+
+            <!-- Series 65 -->
+
+            <div class="col-lg-3">
+
+                <div style="
+                    border:1px solid #EEF2F7;
+                    border-radius:20px;
+                    padding:34px 24px;
+                    height:100%;
+                ">
+
+                    <div style="font-size:34px;">🇺🇸</div>
+
+                    <h5 class="fw-bold mt-3"
+                        style="font-size:22px;">
+
+                        Series 65
+
+                    </h5>
+
+                    <small class="text-muted">
+
+                        미국 투자자문 자격
+
+                    </small>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- SIE -->
+
+            <div class="col-lg-3">
+
+                <div style="
+                    border:1px solid #EEF2F7;
+                    border-radius:20px;
+                    padding:34px 24px;
+                    height:100%;
+                ">
+
+                    <div style="font-size:34px;">📈</div>
+
+                    <h5 class="fw-bold mt-3"
+                        style="font-size:22px;">
+
+                        SIE
+
+                    </h5>
+
+                    <small class="text-muted">
+
+                        미국 증권업 기초 자격
+
+                    </small>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- KCIA -->
+
+            <div class="col-lg-3">
+
+                <div style="
+                    border:1px solid #EEF2F7;
+                    border-radius:20px;
+                    padding:34px 24px;
+                    height:100%;
+                ">
+
+                    <div style="font-size:34px;">📊</div>
+
+                    <h5 class="fw-bold mt-3"
+                        style="font-size:22px;">
+
+                        KCIA
+
+                    </h5>
+
+                    <small class="text-muted">
+
+                        한국 투자애널리스트
+
+                    </small>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ARPS -->
+
+            <div class="col-lg-3">
+
+                <div style="
+                    border:1px solid #EEF2F7;
+                    border-radius:20px;
+                    padding:34px 24px;
+                    height:100%;
+                ">
+
+                    <div style="font-size:34px;">🏆</div>
+
+                    <h5 class="fw-bold mt-3"
+                        style="font-size:22px;">
+
+                        ARPS
+
+                    </h5>
+
+                    <small class="text-muted">
+
+                        은퇴설계전문가
+
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Additional Education -->
+
+        <div style="
+            margin-top:50px;
+            background:#F8FAFF;
+            border-radius:22px;
+            padding:32px 40px;
+            text-align:center;
+        ">
+
+            <div style="
+                font-size:17px;
+                color:#666;
+                line-height:2;
+            ">
+
+                <strong>추가 전문 교육</strong><br><br>
+
+                📚 NYIF(New York Institute of Finance)
+                증권 트레이딩 전문 과정 수료
+
+                <br>
+
+                🤖 Oxford University
+                알고리즘 트레이딩 과정 수료
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Footer -->
+
+    <div class="text-center mt-5 pt-3">
+
+        <h3 class="fw-bold"
+            style="
+            font-size:40px;
+            line-height:1.7;
+        ">
+
+            우리는 투자 이론보다<br>
+
+            <span class="gradient">
+
+                실제 전략을 만들고,<br>
+
+                운영하며 성장하는 경험을<br>
+
+                함께 만들어갑니다.
+
+            </span>
+
+        </h3>
+
+    </div>
+
+</div>
+
+</section>
+
+<!-- WHY WE TEACH -->
+<section style="background:#fff;padding:140px 0;">
+
+<div class="container" style="max-width:1000px;">
+
+    <!-- Title -->
+
+    <div class="text-center">
+
+        <span style="
+            display:inline-block;
+            padding:8px 22px;
+            border-radius:999px;
+            background:#FFF7ED;
+            color:#F59E0B;
+            font-size:14px;
+            font-weight:700;
+            letter-spacing:1px;">
+
+            WHY WE TEACH
+
+        </span>
+
+        <h2 class="fw-bold mt-4"
+            style="
+            font-size:58px;
+            line-height:1.35;
+        ">
+
+            플랫폼만으로는<br>
+
+            충분하지 않았습니다.
+
+        </h2>
+
+    </div>
+
+
+
+    <!-- Question -->
+
+    <div style="
+        margin:70px auto;
+        max-width:820px;
+        background:#F8FAFF;
+        border-radius:34px;
+        padding:70px 60px;
+        text-align:center;
+        box-shadow:0 20px 60px rgba(0,0,0,.06);
+    ">
+
+        <div style="
+            color:#4F6DFF;
+            font-size:18px;
+            font-weight:700;
+            margin-bottom:25px;
+        ">
+
+            많은 분들이 이렇게 질문합니다.
+
+        </div>
+
+        <h2 style="
+            font-size:44px;
+            font-weight:900;
+            line-height:1.7;
+            margin-bottom:35px;
+        ">
+
+            "전략을 만들라고 하는데,<br>
+
+            저는 처음이라<br>
+
+            어떻게 해야 할지 모르겠습니다."
+
+        </h2>
+
+        <p style="
+            font-size:22px;
+            color:#666;
+            line-height:1.9;
+            margin-bottom:0;
+        ">
+
+            전략의 중요성은 이해하지만,
+
+            처음부터 혼자 만드는 것은
+
+            누구에게나 어려운 일입니다.
+
+        </p>
+
+    </div>
+
+
+
+    <!-- Solution -->
+
+    <div class="text-center mt-5">
+
+        <h2 class="fw-bold"
+            style="
+            font-size:48px;
+            line-height:1.5;
+        ">
+
+            그래서 우리는
+
+            <br>
+
+            <span class="gradient">
+
+            전략을 만드는 방법부터 <br>실행하고 복기하는 과정까지,
+
+            </span><br>
+            교육과 특강을 함께 진행합니다.
+
+        </h2>
+
+        <p class="mt-4"
+           style="
+            font-size:22px;
+            color:#666;
+            line-height:2;
             max-width:760px;
             margin:auto;
-            padding:45px;
-            background:#F8FAFF;
-            border-radius:28px;
-            text-align:center;">
-            <div style="
-                color:#4F6DFF;
-                font-size:15px;
-                font-weight:700;
-                letter-spacing:1px;
-                margin-bottom:18px;">
-                많은 분들이 이렇게 질문합니다.
-            </div>
-            <div style="
-                font-size:30px;
-                font-weight:700;
-                line-height:1.7;">
-                "전략을 만들라고 하는데,<br>
-                저는 처음이라 어떻게 해야 할지 모르겠습니다."
-            </div>
-        </div>
-        <!-- Description -->
-        <div class="text-center mt-5">
-            <p style="
-                font-size:22px;
-                line-height:2;
-                color:#444;">
-                Tradeverse는 좋은 플랫폼만으로 좋은 투자자가 만들어진다고 생각하지 않습니다.<br><br>
-                그래서 플랫폼과 함께 교육과 특강을 정기적으로 진행하고 있습니다.
-            </p>
-        </div>
-        <!-- Process -->
-        <div style="
-            margin-top:70px;
-            border-top:1px solid #ECECEC;">
-            <div class="edu-line">
-                시장 흐름을 읽고,
-            </div>
-            <div class="edu-line">
-                차트를 분석하고,
-            </div>
-            <div class="edu-line">
-                전략을 만들고,
-            </div>
-            <div class="edu-line">
-                실행 결과를 복기하며,
-            </div>
-            <div class="edu-line">
-                왜 그런 판단을 했는지 함께 고민합니다.
-            </div>
-        </div>
-        <!-- Philosophy -->
-        <div style="
-            margin-top:90px;
-            padding:80px 60px;
-            text-align:center;
-            background:#F7FAFF;
-            border-radius:32px;">
-            <div style="
-                color:#4F6DFF;
-                font-size:14px;
-                font-weight:700;
-                letter-spacing:1px;">
-                OUR PHILOSOPHY
-            </div>
-            <h3 class="fw-bold mt-4">
-                우리가 전달하고 싶은 것은
-            </h3>
-            <h1 style="
-                margin-top:35px;
-                font-size:54px;
-                line-height:1.5;">
-                <span style="color:#111;">
-                    '무엇을 살지'
-                </span>
-                <span style="
-                    color:#999;
-                    font-weight:400;">
-                    가 아니라,
-                </span>
-                <br>
-                <span class="gradient-text">
-                    '왜 그렇게 판단하는지'
-                </span>
-                입니다.
-            </h1>
-        </div>
-        <!-- Footer -->
-        <div class="text-center mt-5">
-            <p style="
-                font-size:21px;
-                line-height:2;
-                color:#666;">
-                교육은 서비스를 판매하기 위한 목적이 아니라,<br>
-                Tradeverse가 추구하는 전략 중심 투자와 건강한 투자 습관을 함께 만들어가기 위한<br>
-                하나의 콘텐츠입니다.
-            </p>
-        </div>
+        ">
+
+            단순히 기능을 알려드리는 것이 아니라,<br>
+
+            실제 투자 루틴을 만드는 과정을 함께합니다.
+
+        </p>
+
     </div>
+
+
+
+    <!-- Flow -->
+
+    <div class="row mt-5 g-4">
+
+        <div class="col-lg-3">
+
+            <div style="
+                background:white;
+                border-radius:24px;
+                padding:40px 30px;
+                height:100%;
+                text-align:center;
+                box-shadow:0 12px 35px rgba(0,0,0,.05);
+            ">
+
+                <div style="font-size:60px;">🌍</div>
+
+                <h3 class="fw-bold mt-4">
+
+                    시장 읽기
+
+                </h3>
+
+                <p class="text-muted mt-3 mb-0">
+
+                    글로벌 시장과
+                    흐름을 이해합니다.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="col-lg-3">
+
+            <div style="
+                background:white;
+                border-radius:24px;
+                padding:40px 30px;
+                height:100%;
+                text-align:center;
+                box-shadow:0 12px 35px rgba(0,0,0,.05);
+            ">
+
+                <div style="font-size:60px;">🎯</div>
+
+                <h3 class="fw-bold mt-4">
+
+                    전략 만들기
+
+                </h3>
+
+                <p class="text-muted mt-3 mb-0">
+
+                    나만의 기준으로
+                    전략을 설계합니다.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="col-lg-3">
+
+            <div style="
+                background:white;
+                border-radius:24px;
+                padding:40px 30px;
+                height:100%;
+                text-align:center;
+                box-shadow:0 12px 35px rgba(0,0,0,.05);
+            ">
+
+                <div style="font-size:60px;">⚙️</div>
+
+                <h3 class="fw-bold mt-4">
+
+                    실행하기
+
+                </h3>
+
+                <p class="text-muted mt-3 mb-0">
+
+                    전략을 실제로
+                    실행합니다.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="col-lg-3">
+
+            <div style="
+                background:linear-gradient(135deg,#4F6DFF,#2563EB);
+                color:white;
+                border-radius:24px;
+                padding:40px 30px;
+                height:100%;
+                text-align:center;
+                box-shadow:0 20px 50px rgba(37,99,235,.22);
+            ">
+
+                <div style="font-size:60px;">📈</div>
+
+                <h3 class="fw-bold mt-4">
+
+                    복기 · 개선
+
+                </h3>
+
+                <p style="
+                    color:rgba(255,255,255,.88);
+                    margin-bottom:0;
+                    margin-top:15px;
+                ">
+
+                    데이터를 기반으로
+                    다음 전략을 개선합니다.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Bottom -->
+
+    <div class="text-center mt-5 pt-4">
+
+        <h3 class="fw-bold"
+            style="
+            line-height:1.8;
+            font-size:34px;
+        ">
+
+            우리가 만드는 것은
+
+            <br>
+
+            <span class="gradient">
+
+                투자 교육이 아니라,
+
+                투자 루틴입니다.
+
+            </span>
+
+        </h3>
+
+    </div>
+
+</div>
+
 </section>
 
+<!-- WEEKLY ROUTINE -->
+<section style="background:#F8FAFF;padding:140px 0;">
+
+<div class="container" style="max-width:1200px;">
+
+    <!-- Title -->
+
+    <div class="text-center mb-5">
+
+        <span style="
+            display:inline-block;
+            padding:8px 22px;
+            border-radius:999px;
+            background:#EEF4FF;
+            color:#4F6DFF;
+            font-size:14px;
+            font-weight:700;
+            letter-spacing:1px;
+        ">
+
+            WEEKLY ROUTINE
+
+        </span>
+
+        <h2 class="fw-bold mt-4"
+            style="
+                font-size:58px;
+                line-height:1.3;
+            ">
+
+            매주 반복되는<br>
+
+            <span class="gradient">
+
+                투자 루틴
+
+            </span>
+
+        </h2>
+
+        <p class="mt-4"
+           style="
+                font-size:22px;
+                color:#666;
+                line-height:1.9;
+                max-width:760px;
+                margin:auto;
+           ">
+
+            단순히 배우는 것이 아니라,
+
+            매주 직접 실행하며 경험을 쌓습니다.
+
+        </p>
+
+    </div>
 
 
 
-<!-- ========================================================= -->
+    <!-- Monday -->
+
+    <div style="
+        background:white;
+        border-radius:30px;
+        padding:55px;
+        box-shadow:0 20px 60px rgba(0,0,0,.06);
+        margin-bottom:45px;
+    ">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-3 text-center">
+
+                <div style="
+                    width:120px;
+                    height:120px;
+                    background:#EEF4FF;
+                    border-radius:50%;
+                    margin:auto;
+                    display:flex;
+                    align-items:center;
+                    justify-content:center;
+                    font-size:60px;
+                ">
+
+                    📅
+
+                </div>
+
+                <h2 class="fw-bold mt-4">
+
+                    월요일
+
+                </h2>
+
+                <p class="text-primary fw-bold">
+
+                    PM 8:00
+
+                </p>
+
+            </div>
+
+            <div class="col-lg-9">
+
+                <div class="row g-4">
+
+                    <div class="col-md-4">
+
+                        <div style="
+                            background:#F8FAFF;
+                            border-radius:20px;
+                            padding:28px;
+                            height:100%;
+                        ">
+
+                            <div style="font-size:42px;">🌍</div>
+
+                            <h5 class="fw-bold mt-3">
+
+                                시장 분석
+
+                            </h5>
+
+                            <p class="mb-0 text-muted">
+
+                                Barron's를 기반으로
+
+                                글로벌 시장 흐름을 파악합니다.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <div style="
+                            background:#F8FAFF;
+                            border-radius:20px;
+                            padding:28px;
+                            height:100%;
+                        ">
+
+                            <div style="font-size:42px;">📊</div>
+
+                            <h5 class="fw-bold mt-3">
+
+                                종목 분석
+
+                            </h5>
+
+                            <p class="mb-0 text-muted">
+
+                                기본적 분석과
+
+                                차트 분석을 진행합니다.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <div style="
+                            background:#F8FAFF;
+                            border-radius:20px;
+                            padding:28px;
+                            height:100%;
+                        ">
+
+                            <div style="font-size:42px;">🎯</div>
+
+                            <h5 class="fw-bold mt-3">
+
+                                전략 작성
+
+                            </h5>
+
+                            <p class="mb-0 text-muted">
+
+                                Tradeverse에
+
+                                직접 전략을 입력합니다.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Arrow -->
+
+    <div class="text-center my-5">
+
+        <div style="
+            font-size:90px;
+            color:#4F6DFF;
+            line-height:1;
+        ">
+
+            ↓
+
+        </div>
+
+        <h3 class="fw-bold">
+
+            한 주 동안
+
+            전략이 실제 시장에서 실행됩니다.
+
+        </h3>
+
+    </div>
+
+
+
+    <!-- Friday -->
+
+    <div style="
+        background:white;
+        border-radius:30px;
+        padding:55px;
+        box-shadow:0 20px 60px rgba(0,0,0,.06);
+    ">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-3 text-center">
+
+                <div style="
+                    width:120px;
+                    height:120px;
+                    background:#EEF4FF;
+                    border-radius:50%;
+                    margin:auto;
+                    display:flex;
+                    align-items:center;
+                    justify-content:center;
+                    font-size:60px;
+                ">
+
+                    📅
+
+                </div>
+
+                <h2 class="fw-bold mt-4">
+
+                    금요일
+
+                </h2>
+
+                <p class="text-primary fw-bold">
+
+                    PM 8:00
+
+                </p>
+
+            </div>
+
+            <div class="col-lg-9">
+
+                <div class="row g-4">
+
+                    <div class="col-md-4">
+
+                        <div style="
+                            background:#F8FAFF;
+                            border-radius:20px;
+                            padding:28px;
+                            height:100%;
+                        ">
+
+                            <div style="font-size:42px;">📈</div>
+
+                            <h5 class="fw-bold mt-3">
+
+                                결과 확인
+
+                            </h5>
+
+                            <p class="mb-0 text-muted">
+
+                                실제 전략의
+
+                                결과를 확인합니다.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <div style="
+                            background:#F8FAFF;
+                            border-radius:20px;
+                            padding:28px;
+                            height:100%;
+                        ">
+
+                            <div style="font-size:42px;">📝</div>
+
+                            <h5 class="fw-bold mt-3">
+
+                                복기
+
+                            </h5>
+
+                            <p class="mb-0 text-muted">
+
+                                진입·청산 과정을
+
+                                함께 리뷰합니다.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <div style="
+                            background:#4F6DFF;
+                            color:white;
+                            border-radius:20px;
+                            padding:28px;
+                            height:100%;
+                        ">
+
+                            <div style="font-size:42px;">🚀</div>
+
+                            <h5 class="fw-bold mt-3">
+
+                                개선
+
+                            </h5>
+
+                            <p style="color:rgba(255,255,255,.9);margin-bottom:0;">
+
+                                다음 주 전략을
+
+                                더 발전시킵니다.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Bottom -->
+
+    <div class="text-center mt-5 pt-4">
+
+        <h2 class="fw-bold"
+            style="line-height:1.6;">
+
+            중요한 것은
+
+            <span class="gradient">
+
+                한 번의 수익
+
+            </span>
+
+            이 아니라,
+
+            <br>
+
+            매주 반복되는
+
+            <span class="gradient">
+
+                투자 루틴
+
+            </span>
+
+            입니다.
+
+        </h2>
+
+    </div>
+
+</div>
+
+</section>
+
+<!-- JOIN THE CHALLENGE -->
+<section style="padding:140px 0;background:#fff;">
+
+<div class="container" style="max-width:1200px;">
+
+    <!-- Title -->
+
+    <div class="text-center mb-5">
+
+        <span style="
+            display:inline-block;
+            padding:8px 22px;
+            border-radius:999px;
+            background:#EEF4FF;
+            color:#4F6DFF;
+            font-size:14px;
+            font-weight:700;
+            letter-spacing:1px;
+        ">
+
+            JOIN THE CHALLENGE
+
+        </span>
+
+        <h2 class="fw-bold mt-4"
+            style="
+                font-size:58px;
+                line-height:1.35;
+            ">
+
+            이제 직접<br>
+
+            <span class="gradient">
+
+                전략을 운영해보세요.
+
+            </span>
+
+        </h2>
+
+        <p class="mt-4"
+           style="
+                font-size:22px;
+                color:#666;
+                line-height:1.9;
+           ">
+
+            Tradeverse와 함께
+
+            전략 중심 투자 루틴을 시작해보세요.
+
+        </p>
+
+    </div>
+
+
+
+    <div class="row g-4">
+
+
+
+        <!-- LEFT -->
+
+        <div class="col-lg-6">
+
+            <div style="
+                background:white;
+                border-radius:32px;
+                padding:50px;
+                height:100%;
+                box-shadow:0 20px 60px rgba(0,0,0,.06);
+            ">
+
+                <div style="font-size:56px;">
+                    🎁
+                </div>
+
+                <h2 class="fw-bold mt-4">
+
+                    신규 참가 혜택
+
+                </h2>
+
+                <hr>
+
+                <div style="font-size:22px;line-height:2;">
+
+                    ✅ 4주(8회) 무료 참여
+
+                    <br>
+
+                    ✅ Tradeverse 플랫폼 무료 제공
+
+                    <br>
+
+                    ✅ 실시간 Zoom 교육
+
+                    <br>
+
+                    ✅ 전략 실습
+
+                    <br>
+
+                    ✅ 질의응답 및 피드백
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- RIGHT -->
+
+        <div class="col-lg-6">
+
+            <div style="
+                background:linear-gradient(135deg,#4F6DFF,#2563EB);
+                color:white;
+                border-radius:32px;
+                padding:50px;
+                height:100%;
+                box-shadow:0 25px 70px rgba(37,99,235,.22);
+            ">
+
+                <div style="font-size:56px;">
+                    📅
+                </div>
+
+                <h2 class="fw-bold mt-4">
+
+                    참여 안내
+
+                </h2>
+
+                <hr style="border-color:rgba(255,255,255,.2);">
+
+                <div style="
+                    font-size:22px;
+                    line-height:2.2;
+                    color:rgba(255,255,255,.92);
+                ">
+
+                    🗓 매주 월요일 · 금요일
+
+                    <br>
+
+                    🕗 오후 8시
+
+                    <br>
+
+                    💻 Zoom 온라인 실시간
+
+                    <br>
+
+                    👨‍💻 Tradeverse 실습
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- 준비사항 -->
+
+    <div style="
+        background:#F8FAFF;
+        border-radius:30px;
+        padding:50px;
+        margin-top:45px;
+    ">
+
+        <div class="text-center">
+
+            <h3 class="fw-bold">
+
+                시작 전에 필요한 준비
+
+            </h3>
+
+        </div>
+
+        <div class="row mt-5 g-4">
+
+            <div class="col-lg-4">
+
+                <div style="
+                    background:white;
+                    border-radius:22px;
+                    padding:35px;
+                    text-align:center;
+                    height:100%;
+                ">
+
+                    <div style="font-size:52px;">🏦</div>
+
+                    <h4 class="fw-bold mt-3">
+
+                        DB증권 계좌
+
+                    </h4>
+
+                    <p class="mb-0 text-muted">
+
+                        해외주식 계좌 개설
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4">
+
+                <div style="
+                    background:white;
+                    border-radius:22px;
+                    padding:35px;
+                    text-align:center;
+                    height:100%;
+                ">
+
+                    <div style="font-size:52px;">🔑</div>
+
+                    <h4 class="fw-bold mt-3">
+
+                        Open API
+
+                    </h4>
+
+                    <p class="mb-0 text-muted">
+
+                        API 등록
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4">
+
+                <div style="
+                    background:white;
+                    border-radius:22px;
+                    padding:35px;
+                    text-align:center;
+                    height:100%;
+                ">
+
+                    <div style="font-size:52px;">🚀</div>
+
+                    <h4 class="fw-bold mt-3">
+
+                        Tradeverse
+
+                    </h4>
+
+                    <p class="mb-0 text-muted">
+
+                        회원가입 및 기본 세팅
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Price -->
+
+    <div class="text-center mt-5">
+
+        <div style="
+            display:inline-block;
+            background:#FFF8EA;
+            border:2px solid #FFD56A;
+            border-radius:26px;
+            padding:45px 70px;
+        ">
+
+            <div style="
+                color:#F59E0B;
+                font-size:18px;
+                font-weight:700;
+            ">
+
+                EVENT
+
+            </div>
+
+            <div style="
+                margin-top:20px;
+                font-size:24px;
+                text-decoration:line-through;
+                color:#999;
+            ">
+
+                월 250,000원
+
+            </div>
+
+            <div style="
+                margin-top:10px;
+                font-size:58px;
+                font-weight:900;
+                color:#D97706;
+            ">
+
+                첫 4주 무료
+
+            </div>
+
+            <div style="
+                margin-top:15px;
+                font-size:20px;
+                color:#666;
+            ">
+
+                플랫폼 + 교육 모두 포함
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- CTA -->
+
+    <div class="text-center mt-5 pt-3">
+
+        <h2 class="fw-bold"
+            style="
+                font-size:46px;
+                line-height:1.5;
+            ">
+
+            지금 필요한 것은
+
+            <br>
+
+            <span class="gradient">
+
+                또 하나의 추천 종목이 아니라,
+
+            </span>
+
+            <br>
+
+            반복 가능한 투자 루틴입니다.
+
+        </h2>
+
+
+
+        <div class="mt-5">
+
+            <a href="https://trade.tradeverse.one/"
+               target="_blank"
+               class="btn btn-primary btn-lg px-5 py-3 me-3">
+
+                Tradeverse 시작하기
+
+            </a>
+
+            <a href="http://pf.kakao.com/_xlJxajX"
+               target="_blank"
+               class="btn btn-outline-primary btn-lg px-5 py-3">
+
+                카카오톡 문의하기
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
 <!-- FAQ -->
-<!-- ========================================================= -->
-
 <section class="faq-section">
 
 <div class="container">
@@ -3397,164 +5210,247 @@ Tradeverse는 추천 종목 서비스가 아닙니다.
 
 </section>
 
-
-
-
-
-
-<!-- ========================================================= -->
 <!-- FINAL CTA -->
-<!-- ========================================================= -->
+<section style="
+background:linear-gradient(135deg,#2563EB,#4F6DFF);
+padding:140px 0;
+color:white;
+overflow:hidden;
+position:relative;
+">
 
-<section class="final-cta">
+<div class="container text-center" style="max-width:1000px;">
 
-<div class="container text-center">
+    <span style="
+        display:inline-block;
+        padding:8px 22px;
+        border-radius:999px;
+        background:rgba(255,255,255,.15);
+        color:white;
+        font-size:14px;
+        font-weight:700;
+        letter-spacing:1px;
+    ">
 
-<span class="badge bg-light text-primary rounded-pill px-3 py-2">
+        START TODAY
 
-Start Today
+    </span>
 
-</span>
+    <h1 class="fw-bold mt-5"
+        style="
+        font-size:clamp(52px,5vw,82px);
+        line-height:1.35;
+    ">
 
-<h1 class="display-2 fw-bold mt-5">
+        더 많은 종목보다,
 
-더 많은 종목보다,
+        <br>
 
-<br>
+        더 명확한 기준이 필요합니다.
 
-더 명확한 기준이 필요합니다.
+    </h1>
 
-</h1>
+    <p class="mt-5"
+       style="
+        font-size:24px;
+        line-height:2;
+        color:rgba(255,255,255,.88);
+        max-width:760px;
+        margin:auto;
+    ">
 
-<p class="lead mt-5">
+        시장은 매일 변합니다.
 
-지금 시장에서 필요한 것은
+        <br>
 
-더 많은 정보가 아니라,
+        하지만
 
-더 나은 투자 습관입니다.
+        <strong>
 
-</p>
+            좋은 투자 습관은
 
-<div class="statement-box mt-5">
+        </strong>
 
-<h2>
+        오래 남습니다.
 
-명확한 기준
+    </p>
 
-<span>→</span>
 
-일관된 실행
 
-<span>→</span>
+    <div style="
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        gap:20px;
+        flex-wrap:wrap;
+        margin-top:70px;
+        font-size:28px;
+        font-weight:800;
+    ">
 
-반복 가능한 습관
+        <div>
 
-</h2>
+            명확한 기준
 
-</div>
+        </div>
 
-<div class="mt-5">
+        <div style="opacity:.6;">→</div>
 
-<a href="#" class="btn btn-light btn-lg px-5 py-3 me-3">
+        <div>
 
-Tradeverse 시작하기
+            일관된 실행
 
-</a>
+        </div>
 
-<a href="#" class="btn btn-outline-light btn-lg px-5 py-3">
+        <div style="opacity:.6;">→</div>
 
-교육 프로그램 보기
+        <div>
 
-</a>
+            반복 가능한 습관
 
-</div>
+        </div>
+
+    </div>
+
+
+
+    <div class="mt-5 pt-4">
+
+        <a href="https://trade.tradeverse.one/"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="btn btn-light btn-lg px-5 py-3 me-3 mb-3">
+
+            Tradeverse 시작하기
+
+        </a>
+
+        <a href="http://pf.kakao.com/_xlJxajX"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="btn btn-outline-light btn-lg px-5 py-3 mb-3">
+
+            카카오톡 채널 문의하기
+
+        </a>
+
+    </div>
 
 </div>
 
 </section>
 
-
-
-
-
-<!-- ========================================================= -->
 <!-- FOOTER -->
-<!-- ========================================================= -->
+<footer style="
+background:#0F172A;
+padding:70px 0 40px;
+color:#CBD5E1;
+">
 
-<footer class="footer-section">
+<div class="container" style="max-width:1100px;">
 
-<div class="container text-center">
+    <div class="row align-items-center">
 
-<h2 class="display-4 fw-bold">
+        <div class="col-lg-6 text-center text-lg-start">
 
-Tradeverse
+            <h2 class="fw-bold text-white mb-3">
 
-</h2>
+                Tradeverse
 
-<p class="lead mt-4">
+            </h2>
 
-세상에는
+            <p style="
+                margin:0;
+                line-height:1.9;
+                color:#94A3B8;
+            ">
 
-종목을 추천하는 서비스는 많습니다.
+                Where Anyone Can Trade.
 
-<br>
+                <br>
 
-자동매매를 제공하는 플랫폼도 많습니다.
+                Strategy First. Process Always.
 
-</p>
+            </p>
 
-<div class="footer-quote">
+        </div>
 
-<h2>
 
-하지만
 
-<br>
+        <div class="col-lg-6 text-center text-lg-end mt-5 mt-lg-0">
 
-투자자를 성장시키는 플랫폼은
+            <a href="https://trade.tradeverse.one/"
+               target="_blank"
+               style="
+               color:#CBD5E1;
+               text-decoration:none;
+               margin-left:22px;
+               ">
 
-많지 않습니다.
+                Platform
 
-</h2>
+            </a>
 
-</div>
+            <a href="http://pf.kakao.com/_xlJxajX"
+               target="_blank"
+               style="
+               color:#CBD5E1;
+               text-decoration:none;
+               margin-left:22px;
+               ">
 
-<div class="footer-manifesto">
+                Contact
 
-<div>
+            </a>
 
-추천보다 전략을
+            <a href="#"
+               style="
+               color:#CBD5E1;
+               text-decoration:none;
+               margin-left:22px;
+               ">
 
-</div>
+                Privacy
 
-<div>
+            </a>
 
-감정보다 규칙을
+            <a href="#"
+               style="
+               color:#CBD5E1;
+               text-decoration:none;
+               margin-left:22px;
+               ">
 
-</div>
+                Terms
 
-<div>
+            </a>
 
-결과보다 프로세스를
+        </div>
 
-</div>
+    </div>
 
-</div>
 
-<p class="footer-desc">
 
-우리는 더 많은 거래를 만드는 것이 아니라,
+    <hr style="
+        margin:45px 0 25px;
+        border-color:rgba(255,255,255,.08);
+    ">
 
-더 오래 살아남는 투자자를 만드는 것을 목표로 합니다.
 
-</p>
 
-<div class="footer-bottom">
+    <div class="text-center">
 
-© 2026 Tradeverse
+        <div style="
+            color:#64748B;
+            font-size:15px;
+            line-height:1.8;
+        ">
 
-</div>
+            © 2026 Tradeverse. All Rights Reserved.
+
+        </div>
+
+    </div>
 
 </div>
 
@@ -3586,11 +5482,10 @@ Tradeverse
 
 
 
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
 
 AOS.init({
@@ -3601,8 +5496,90 @@ once:true
 
 });
 
-</script>
 
+
+
+//실제 데이터 숫자 카운트
+
+const counters = document.querySelectorAll('.counter');
+
+const observer = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        if (!entry.isIntersecting) return;
+
+        const counter = entry.target;
+        const target = Number(counter.dataset.target);
+
+        let current = 0;
+
+        const duration = 1200;
+        const fps = 60;
+        const totalFrames = duration / (1000 / fps);
+        const increment = target / totalFrames;
+
+        const timer = setInterval(() => {
+
+            current += increment;
+
+            if (current >= target) {
+
+                counter.innerText = target.toLocaleString() + "+";
+                /* 뒤에 + 없애고 싶으면 
+                counter.innerText = target.toLocaleString(); */
+                clearInterval(timer);
+
+            } else {
+
+                counter.innerText = Math.floor(current).toLocaleString();
+
+            }
+
+        }, 1000 / fps);
+
+        observer.unobserve(counter);
+
+    });
+
+}, {
+    threshold: 0.5
+});
+
+counters.forEach(counter => {
+    observer.observe(counter);
+});
+
+
+//후기 swiper
+new Swiper(".reviewSwiper",{
+
+    slidesPerView:3,
+    spaceBetween:24,
+
+    pagination:{
+        el:".swiper-pagination",
+        clickable:true,
+    },
+
+    breakpoints:{
+
+        0:{
+            slidesPerView:1
+        },
+
+        768:{
+            slidesPerView:2
+        },
+
+        992:{
+            slidesPerView:3
+        }
+
+    }
+
+});
+</script>
 </body>
 </html>
 ```
