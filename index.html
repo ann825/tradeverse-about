@@ -131,6 +131,66 @@ section{
         width: 200px; /* 모바일에서 캐릭터 크기 축소 */
     }
 }
+
+/* 버튼 애니메이션 */
+.btn-shine{
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-shine::after{
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -120%;
+    width: 60%;
+    height: 220%;
+
+    background: linear-gradient(
+        115deg,
+        transparent 0%,
+        rgba(255,255,255,0.2) 35%,
+        rgba(255,255,255,0.8) 50%,
+        rgba(255,255,255,0.2) 65%,
+        transparent 100%
+    );
+
+    transform: rotate(25deg);
+    animation: btnShine 3.5s ease-in-out infinite;
+    pointer-events: none;
+}
+
+@keyframes btnShine{
+
+    0%{
+        left:-120%;
+    }
+
+    25%{
+        left:160%;
+    }
+
+    100%{
+        left:160%;
+    }
+
+}
+.btn-cta{
+    animation: pulseCTA 2.5s ease-in-out infinite;
+}
+
+@keyframes pulseCTA{
+
+0%,100%{
+    transform:scale(1);
+}
+
+50%{
+    transform:scale(1.02);
+}
+
+}
+
 </style>
 
 </head>
@@ -1082,17 +1142,16 @@ section{
                         grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); 
                         gap:16px; 
                         margin-bottom:32px;">
-
                         <div style="border:1px solid #E2E8F0; border-radius:18px; padding:24px 16px; text-align:center; background:#fff; box-sizing:border-box;">
                             <div style="font-size:32px; margin-bottom:12px;">🇺🇸</div>
                             <h5 class="fw-bold" style="font-size:18px; color:#1E293B; margin:0 0 6px 0;">Series 65</h5>
-                            <span style="font-size:13px; color:#64748B; font-weight:500;">미국 투자자문 자격</span>
+                            <span style="font-size:13px; color:#64748B; font-weight:500;">투자자산운용사(북미)</span>
                         </div>
 
                         <div style="border:1px solid #E2E8F0; border-radius:18px; padding:24px 16px; text-align:center; background:#fff; box-sizing:border-box;">
                             <div style="font-size:32px; margin-bottom:12px;">📈</div>
-                            <h5 class="fw-bold" style="font-size:18px; color:#1E293B; margin:0 0 6px 0;">SIE</h5>
-                            <span style="font-size:13px; color:#64748B; font-weight:500;">미국 증권업 기초 자격</span>
+                            <h5 class="fw-bold" style="font-size:18px; color:#1E293B; margin:0 0 6px 0;">투자자산운용사</h5>
+                            <span style="font-size:13px; color:#64748B; font-weight:500;">투자자산운용사(국내)</span>
                         </div>
 
                         <div style="border:1px solid #E2E8F0; border-radius:18px; padding:24px 16px; text-align:center; background:#fff; box-sizing:border-box;">
@@ -1715,6 +1774,41 @@ section{
                                 <li><span style="margin-right: 10px;">💻</span> <span style="font-weight: 700;">Zoom</span> 온라인 실시간 라이브 스트리밍</li>
                                 <li><span style="margin-right: 10px;">👨‍💻</span> <span style="font-weight: 700;">트레이드버스</span> 실습 프로그램 연계 운영</li>
                             </ul>
+                            <div style="margin-top: 32px;">
+                                <a href="https://forms.gle/p7TRqGPPFV1hFXWv8"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="btn-cta btn-shine"
+                                style="
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        gap: 8px;
+                                        width: 100%;
+                                        padding: 16px 20px;
+                                        background: linear-gradient(135deg, #FBBF24, #F59E0B);
+                                        color: #111827;
+                                        border-radius: 14px;
+                                        text-decoration: none;
+                                        font-size: 17px;
+                                        font-weight: 800;
+                                        transition: all .25s ease;
+                                        box-shadow: 0 8px 20px rgba(0,0,0,.12);
+                                    "
+                                    onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 14px 28px rgba(0,0,0,.18)'"
+                                    onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 8px 20px rgba(0,0,0,.12)'">
+                                    🚀 무료 교육 참여 신청하기
+                                </a>
+
+                                <p style="
+                                    margin:12px 0 0;
+                                    text-align:center;
+                                    font-size:13px;
+                                    color:rgba(255,255,255,.75);
+                                ">
+                                    신청서를 작성해주시면 순차적으로 안내드립니다.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1795,7 +1889,6 @@ section{
                         평생 스스로 반복 가능한<br class="d-block d-md-none"> <span style="background: linear-gradient(135deg, #2563EB, #4F6DFF); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: 800;">단단한 투자 루틴</span>입니다.
                     </h2>
                 </div>
-
             </div>
         </section>
 
